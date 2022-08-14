@@ -65,9 +65,20 @@ if (num==31) ftn = "吉";
 if (num==32) ftn = "中吉"; 
  
 document.write(ftn); 
-</script></b><br></font><font style="font-size:38px;">第<script type="text/javascript">
-document.write(num);
-</script>番</font>
+</script><br></font><font style="font-size:30px;">
+<div id="view"></div>
+<script>
+function toKanzi(nums){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = nums.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+document.querySelector('#view').innerText ="第" + toKanzi(num)+"番";
+</script>
+
+</font>
 <hr color="E45B69" size="0.1px"><br>
 <font style="font-size:38px;">
 <b>
