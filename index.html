@@ -1,5 +1,506 @@
-<center>
-<br><br><br><br><br><br>
-<font size="8">
-<a href="result.html">過去ツイ御籤を引く</a>
+<title>過去ツイ御籤</title>
+<body>
+<br>
+<br>
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<div class="popup" id="js-popup">
+  <div class="popup-inner">
+    <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+    <font face="sans-serif" style="font-size:35px;">
+御籤の内容は日で固定です。<br>
+排出される御籤は<br>
+大吉＞吉＞中吉＞小吉＞凶＞大凶<br>
+の6種類の吉凶が記されています。<br>
+排出率は以下の通りです。<br>
+大吉：15.6%<br>
+吉：25.0%<br>
+中吉：18.7%<br>
+小吉：15.6%<br>
+凶：12.5%<br>
+大凶：6.3%<br></font>
+  </div>
+  <div class="black-background" id="js-black-bg"></div>
+</div>
+<button class="btn" id="js-show-popup">
+<font style="font-size:30px;">吉凶序列･排出率</font></button>
+<style>
+.btn{
+margin-right: 20px;
+  margin-left: auto;
+    display: block;
+    width: 250px;
+    /*コレ*/background: transparent;
+    border: 2px solid #FFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 120%;
+    font-weight: bold;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+</style>
+<script>
+function popupImage() {
+  var popup = document.getElementById('js-popup');
+  if(!popup) return;
+
+  var blackBg = document.getElementById('js-black-bg');
+  var closeBtn = document.getElementById('js-close-btn');
+  var showBtn = document.getElementById('js-show-popup');
+
+  closePopUp(blackBg);
+  closePopUp(closeBtn);
+  closePopUp(showBtn);
+  function closePopUp(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup.classList.toggle('is-show');
+    });
+  }
+}
+popupImage();
+</script>
+<br><br><br><br><br>
+<center><b><font color="E45B69" style="font-size:38px;">
+<div class="anim-box" style="width:60% ">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/tit.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
+
+<div id="nowdate"></div>
+
+<font style="font-size:38px;">
+<script type="text/javascript">
+const now1 = new Date();
+var year = now1.getFullYear();
+var month = now1.getMonth()+1;
+var day = now1.getDate();
+
+
+
+function toKanzi(nums){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = nums.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+ 
+ var wareki = year-2018
+ 
+document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+toKanzi(month)+"月"+toKanzi(day)+"日";
+
+</script>
+
+
+
+
 </font>
+<hr color="E45B69" size="0.1px">
+<b><font style="font-size:90px;">
+<script type="text/javascript">
+const now = new Date();
+var serial = (now.getFullYear()+now.getMonth()+now.getDate())*Math.PI
+
+var number = serial.toString();
+var rand = number.substr(8,2);
+var num = Math.floor(rand/3);
+
+if (num==1) ftn = "大吉";
+if (num==2) ftn = "凶";
+if (num==3) ftn = "中吉";
+if (num==4) ftn = "吉";
+if (num==5) ftn = "吉";
+if (num==6) ftn = "小吉";
+if (num==7) ftn = "吉";
+if (num==8) ftn = "中吉";
+if (num==9) ftn = "大吉";
+if (num==10) ftn = "吉";
+if (num==11) ftn = "小吉";
+if (num==12) ftn = "吉";
+if (num==13) ftn = "大凶";
+if (num==14) ftn = "大吉";
+if (num==15) ftn = "中吉";
+if (num==16) ftn = "小吉";
+if (num==17) ftn = "大吉";
+if (num==18) ftn = "凶";
+if (num==19) ftn = "小吉";
+if (num==20) ftn = "小吉";
+if (num==21) ftn = "中吉";
+if (num==22) ftn = "凶";
+if (num==23) ftn = "吉";
+if (num==24) ftn = "大吉";
+if (num==25) ftn = "中吉";
+if (num==26) ftn = "吉";
+if (num==27) ftn = "大吉";
+if (num==28) ftn = "凶";
+if (num==29) ftn = "追加予定";
+if (num==30) ftn = "大凶";
+if (num==31) ftn = "吉";
+if (num==32) ftn = "中吉"; 
+ 
+document.write(ftn); 
+</script><br></font><font style="font-size:30px;">
+<div id="view"></div>
+<script>
+function toKanzi(nums){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = nums.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+document.querySelector('#view').innerText ="第" + toKanzi(num)+"番";
+</script>
+</font>
+<hr color="E45B69" size="0.1px">
+<font style="font-size:38px;">
+<b>
+<script type="text/javascript">
+
+
+if (num==0) twi = "追加予定"; 
+if (num==1) twi = "これ全く下心ないんだけど女子更衣室の中ってどうなってんの？<br>あと全く下心ないんだけどみんなどんな下着つけてんの？";
+if (num==2) twi = "もう医学部諦めて生物学部行って、ゴリラに手コキ覚えさせて一生遊んで暮らそうかな";
+if (num==3) twi = "彩、南南東の方角向いて恵方巻食べてるなら北北西の方角にちんこ向けてたらフェラしてもらえるってこと？？";
+if (num==4) twi = "勃起はした";
+if (num==5) twi = "触れ合ってるとこから全身まですごい気持ちいんだけど新手のオナニー？";
+if (num==6) twi = "限界童貞だから筋トレする理由はセックス";
+if (num==7) twi = "願い事、「彩と」っていうと神も分からないだろうから「隣にいる子、彩って言うんですけど」から始めた";
+if (num==8) twi = "よりかかってるよりかかってるよりかかってる<br>まじ溶ける死ぬ";
+if (num==9) twi = "【速報】<br>有能わい、彩と初詣の約束をする！！！！！！！！";
+if (num==10) twi = "海人とか中2で梶原にフェラしてもらってたらしいな<br>羨ましすぎる";
+if (num==11) twi = "クリぼっちだしオナホも無い";
+if (num==12) twi = "俺医大受かったら彩に頭撫でてもらいたい";
+if (num==13) twi = "ﾝﾛﾎﾞ（ちんちんをしまう音）";
+if (num==14) twi = "明晰夢で折笠出てきたからおっぱい触ったら金縛りにあった";
+if (num==15) twi = "右脳（パンツ見えそう...）<br>左脳（閉じろよ品無いな）<br>↓<br>右脳左脳が導き出した答え<br>「パンツ見せろよ品無いな」";
+if (num==16) twi = "家に県警が来て俺のキモツイ印刷したやつ突きつけられたら失禁しちゃう";
+if (num==17) twi = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告";
+if (num==18) twi = "親にオナホバレて草";
+if (num==19) twi = "「ガシマン」という子供を餓死させてしまう悪い怪人";
+if (num==20) twi = "Sc Ti V Cr Mn を「スコッチ 暴露マン」と覚えてる奴がいるんですよ〜<br>な～〜にぃ〜～!? やっちまったな！！！<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>マンガンをエロい目で見てしまうよ〜";
+if (num==21) twi = "ベッド脇のゴミ箱のティッシュ、桃の香りして草<br>僕の子供、これが由来で桃香になるらしい";
+if (num==22) twi = "わいのヒモカ返してくれや";
+if (num==23) twi = "尿道にカメラをつけて胃カメラとしてフェラチオできればいいのに（ちんこの短歌、ちん歌）";
+if (num==24) twi = "zenly被閲覧数の数だけ射精するワニ";
+if (num==25) twi = "高場「俺は高校生探偵、高場俊輔!! <br>同級生の結丸と自習室に行って・・・<br>めちゃくちゃ疲れてしまった！<br>寝ることに夢中になっていたオレは・・・<br>オナニーをすることができなかった・・・<br>俺はそのまま眠りにつき、目が覚めたら・・・」<br><br>チンコナン「ちんこがド勃起していた!!」<br>";
+if (num==26) twi = "スティッチに見られながらオナニーしよ";
+if (num==27) twi = "ひるまちゃん😃<br>オレの チン毛も、矯正 してほしいです。🍀";
+if (num==28) twi = "ワイ様、鬼久しぶりのゴキブリとの邂逅に発狂し親呼びキンチョールで撃破するも、ベッドの下に入ってしまい、ベッドの下にはおっぱい隠してるため「まぁ...なんとかするわ」となんとか一命を取り留める";
+if (num==29) twi = "追加予定";
+if (num==30) twi = "追加予定";
+if (num==31) twi = "追加予定";
+if (num==32) twi = "追加予定"; 
+if (num==33) twi = "追加予定"; 
+
+document.write(twi); 
+</script>
+<br>
+<font style="font-size:30px;">
+（日時：<script>
+if (num==0) twidate = "追加予定"; 
+if (num==1) twidate = "2021年10月12日 14:08:12";
+if (num==2) twidate = "2021年03月03日 21:12:57";
+if (num==3) twidate = "2021年02月02日 20:08:23";
+if (num==4) twidate = "2021年01月03日 20:21:40";
+if (num==5) twidate = "2021年01月03日 14:02:41";
+if (num==6) twidate = "2021年01月11日 01:27:47";
+if (num==7) twidate = "2021年01月03日 23:46:20";
+if (num==8) twidate = "2021年01月03日 17:24:55";
+if (num==9) twidate = "2021年01月01日 00:18:26";
+if (num==10) twidate = "2021年10月18日 06:03:59";
+if (num==11) twidate = "2020年12月24日 23:18:49";
+if (num==12) twidate = "2020年10月30日 00:27:58";
+if (num==13) twidate = "2020年10月03日 23:41:21";
+if (num==14) twidate = "2020年09月27日 04:47:36";
+if (num==15) twidate = "2020年09月18日 23:39:35";
+if (num==16) twidate = "2020年08月10日 00:58:16";
+if (num==17) twidate = "2020年08月05日 11:49:34";
+if (num==18) twidate = "2020年07月07日 18:22:22";
+if (num==19) twidate = "2021年03月04日 00:06:04";
+if (num==20) twidate = "2021年03月29日 23:48:52";
+if (num==21) twidate = "2021年03月30日 22:26:59";
+if (num==22) twidate = "2021年04月05日 16:15:44";
+if (num==23) twidate = "2021年04月10日 21:11:32";
+if (num==24) twidate = "2021年04月27日 21:54:29";
+if (num==25) twidate = "2021年05月16日 08:52:09";
+if (num==26) twidate = "2021年05月13日 23:46:20";
+if (num==27) twidate = "2021年07月19日 21:37:32";
+if (num==28) twidate = "2021年06月17日 21:53:15";
+if (num==30) twidate = "追加予定";
+if (num==31) twidate = "追加予定";
+if (num==32) twidate = "追加予定"; 
+if (num==33) twidate = "追加予定"; 
+ 
+document.write(twidate); 
+</script>）
+<br><br>
+<script>
+if (num==0) sp = "追加予定"; 
+if (num==1) sp = "高校に女子更衣室しかないため更衣室に入ったことないから気になるという旨の呟き。行ったことない場所に行ってみると吉";
+if (num==2) sp = "ゴリラの握力は500kgとされており、優しく手コキしないと陰茎は潰れる。例え権力を持っていても謙って接すれば吉に傾く。";
+if (num==3) sp = "節分の日の呟き。巻き寿司を食べると吉。性は急ぐべからず。";
+if (num==4) sp = "初詣に行った際に勃起をしたという旨の呟き。勃起は生命力の象徴であるから吉兆である。出産安し。";
+if (num==5) sp = "初詣に行った際に触れ合ってるところが気持ちよかったという旨の呟き。待ち人はじきに現る。";
+if (num==6) sp = "筋トレするのが吉。待ち人現れ、恋愛は成就する。力斗の様になれたら大吉。";
+if (num==7) sp = "初詣の願い事の際に、神に分かりやすい説明をした呟き。相手と対話する際は相手のことを思い、自分勝手に話さないのがよい。";
+if (num==8) sp = "初詣の際に、電車で寄りかかってきて溶けそうになったという呟き。旅行は安全にうまくいく。";
+if (num==9) sp = "非常によい兆し。何事もうまくいく。嫌いな人のコラ画像を作るといっそう吉。";
+if (num==10) sp = "勉学は奮わない。今日は休んで良い。セフレを作るべし。";
+if (num==11) sp = "オナホがクリスマス前に壊れてしまい、寂しいクリスマスを過ごしたという呟き。大切なものを遺失するかもしれない。ケーキを食べると吉。";
+if (num==12) sp = "勉学は成就する。今まで後回しにしてきた勉強をするとうまくいく。人に多く触れ合うと吉。";
+if (num==13) sp = "絵の乳首が見れず陰茎をしまった呟き。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。";
+if (num==14) sp = "よい運勢だが、調子に乗ると凶に転落する。欲を出さず慎んで過ごせば良い日になる。また、良い夢が見れる。";
+if (num==15) sp = "右脳は感覚的、左脳は理論的な思考をすると言われている。この乖離が激しいと思考が難しくなる。吉事が舞い込むが、勉学は控えよ。";
+if (num==16) sp = "明日起きたら彩になってないかな や 自分のクローン作って豊胸手術させようかな の様なキモツイをしすぎた日の呟き。今日した悪事は即時ばれる。 ";
+if (num==17) sp = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。";
+if (num==18) sp = "オナホを洗った後に置いたままにして親にばれた際の呟き。掃除用具だよと謎の嘘をついた。今日は安静に過ごし勉学に励め";
+if (num==19) sp = "物事を急いては凶。何事も落ち着いて進めると成就するだろう。勉学に励め";
+if (num==20) sp = "勉学に励めば、一つの物事を多角的に見ることができる。一見不要な知識も必ず役に立つだろう。ラッキーアイテムはビックリマンコ";
+if (num==21) sp = "出産は安し。可もなく不可もない日になるだろう。桃を食べると吉。";
+if (num==22) sp = "自動チャージのカードを失った際の呟き。金運は悪い。努力して努力に見合った対価を得るべし。";
+if (num==23) sp = "病災に気を付けよ。しかしすぐ快復する。時を待って安静に過ごすと良い。ラッキーアイテムは尿道。";
+if (num==24) sp = "zenlyで人に見られると嬉しいので射精してしまうという呟き。思わぬ吉報が舞い込むかもしれない。鰐革の財布を持っていると吉。";
+if (num==25) sp = "勉学に励むべき。吉事は一度逃してもまた舞い込むから焦らなくて良い。疲れた時は睡眠を取り快復すれば良い日を送れる。";
+if (num==26) sp = "浅香とお揃いの縫いぐるみに見られながら自慰をすれば、浅香に見られながら自慰をするのと同じである。縫いぐるみに見られながら自慰をすると吉。";
+if (num==27) sp = "現存する中で一番気持ち悪い呟きかもしれない。しかし、今日はこれより不快なことは起こらないため吉である。";
+if (num==28) sp = "凶事が起こり、また助けも乞えない状況になる。しかしそれは自分の隠し事のせいであるので、それを除けば吉に傾く。";
+if (num==29) sp = "追加予定";
+if (num==30) sp = "追加予定";
+if (num==31) sp = "追加予定";
+if (num==32) sp = "追加予定"; 
+if (num==33) sp = "追加予定"; 
+document.write(sp); 
+</script>
+<script>
+var numberb = serial.toString();
+var wshnum = numberb.substr(9,1);
+var mchnum = numberb.substr(10,1);
+var usenum = numberb.substr(11,1);
+var stdnum = numberb.substr(12,1);
+var luvnum = numberb.substr(13,1);
+var bernum = numberb.substr(14,1);
+var illnum = numberb.substr(15,1);
+</script>
+<br><br>
+<hr color="E45B69" size="0.1px">
+<table width="100%" style="font-size:35px; color:E45B69;">
+	<tbody>
+		<tr>
+			<td><b>願望</b></td>
+			<td><b><script>
+if (wshnum==1) wsh = "待てば成るがほぼ無理";
+if (wshnum==2) wsh = "すぐに成就するでしょう";
+if (wshnum==3) wsh = "明日には成る";
+if (wshnum==4) wsh = "無理である";
+if (wshnum==5) wsh = "待てば成るでしょう";
+if (wshnum==6) wsh = "明後日には成る";
+if (wshnum==7) wsh = "来週まで待て";
+if (wshnum==8) wsh = "欲張りすぎるな";
+if (wshnum==9) wsh = "まもなく成る";
+if (wshnum==0) wsh = "これ以上は望むな"; 
+
+document.write(wsh); 
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>待人</b></td>
+			<td><b><script>
+if (mchnum==1) mch = "くそぶすが現る";
+if (mchnum==2) mch = "きもい者が来る";
+if (mchnum==3) mch = "遅けれど現る";
+if (mchnum==4) mch = "近くにいる";
+if (mchnum==5) mch = "焦るべからず";
+if (mchnum==6) mch = "来る 心して待て";
+if (mchnum==7) mch = "船木が来る";
+if (mchnum==8) mch = "義輝が来る";
+if (mchnum==9) mch = "元恋人が現る";
+if (mchnum==0) mch = "来る 成就する"; 
+
+document.write(mch);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>失物</b></td>
+			<td><b><script>
+if (usenum==1) use = "膣の中にある";
+if (usenum==2) use = "膣の中にある";
+if (usenum==3) use = "膀胱の中にある";
+if (usenum==4) use = "膀胱の中にある";
+if (usenum==5) use = "元恋人の家にある";
+if (usenum==6) use = "寝床の下にある";
+if (usenum==7) use = "学校にある";
+if (usenum==8) use = "船木が持つている";
+if (usenum==9) use = "捨てた";
+if (usenum==0) use = "見つからず"; 
+
+document.write(use);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>学問</b></td>
+			<td><b><script>
+if (stdnum==1) std = "徹夜してやれ";
+if (stdnum==2) std = "苦手な所をやれ";
+if (stdnum==3) std = "今日は休んで良い";
+if (stdnum==4) std = "壁に当たる";
+if (stdnum==5) std = "よく進む";
+if (stdnum==6) std = "励みすぎるな";
+if (stdnum==7) std = "チンポ学をやれ";
+if (stdnum==8) std = "足し算で間違える";
+if (stdnum==9) std = "いつもより励め";
+if (stdnum==0) std = "壁に当たる"; 
+
+document.write(std);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>恋愛</b></td>
+			<td><b><script>
+if (luvnum==1) luv = "じきに成る";
+if (luvnum==2) luv = "愛せ 倖せあり";
+if (luvnum==3) luv = "船木と成る";
+if (luvnum==4) luv = "義輝と成る";
+if (luvnum==5) luv = "隣の席の人と成る";
+if (luvnum==6) luv = "成らない 待て";
+if (luvnum==7) luv = "セフレはできる";
+if (luvnum==8) luv = "ただちに成る";
+if (luvnum==9) luv = "誘えば成る";
+if (luvnum==0) luv = "誘えば成る"; 
+
+document.write(luv);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>出産</b></td>
+			<td><b><script>
+if (bernum==1) ber = "精神を安定すれば安し";
+if (bernum==2) ber = "待望の暗示";
+if (bernum==3) ber = "すぐに終る";
+if (bernum==4) ber = "医者をよく選べ";
+if (bernum==5) ber = "難産ではない";
+if (bernum==6) ber = "難産になる";
+if (bernum==7) ber = "安からず";
+if (bernum==8) ber = "とても安し";
+if (bernum==9) ber = "難産になる";
+if (bernum==0) ber = "落ち着けば安し"; 
+
+document.write(ber);
+</script></b></b></td>
+		</tr>
+		<tr>
+			<td><b>病気</b></td>
+			<td><b><script>
+if (illnum==1) ill = "日頃を気をつけよ";
+if (illnum==2) ill = "手をよく洗え";
+if (illnum==3) ill = "よく寝れば罹らない";
+if (illnum==4) ill = "気を病む";
+if (illnum==5) ill = "疲れを取れ";
+if (illnum==6) ill = "全快早し";
+if (illnum==7) ill = "性器が大きくなる病に罹る";
+if (illnum==8) ill = "性病になる";
+if (illnum==9) ill = "尿が出なくなる";
+if (illnum==0) ill = "手をよく洗え"; 
+
+document.write(ill);
+</script></b></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</div>
+</font>
+</div>
+
+
+
+<style>
+ 
+ 
+.anim-box {
+  animation: slideIn 4s cubic-bezier(0.25, 1.15, 0.5, 1) 1 forwards;
+  padding: 40px;  box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); 
+  
+  border: 2px solid #dddddd;
+  background-image: url(https://mikuji.github.io/a/paper.PNG);
+}
+ 
+@keyframes slideIn {
+  0% {
+    transform: translateY(1580px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+  
+}
+ 
+ 
+ body {
+  background-image: url("https://mikuji.github.io/a/jh.jpg");
+  background-size: cover;
+}
+ 
+</style>
