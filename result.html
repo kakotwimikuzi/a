@@ -1,10 +1,16 @@
 <title>過去ツイ御籤</title>
 <body>
-<br><br><br><br><br><br><br><br><br>
-<center><b><font color="E45B69">
+<br><br><br><br><br><br><br><br><br><br>
+<center><b><font color="E45B69" style="font-size:38px;">
 <div class="anim-box" style="background:#fefcfc; width:60% ">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/tit.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
 
-<div style="border: 2px double #E45B69; padding:30px;">
+<div id="nowdate"></div>
+
 <font style="font-size:38px;">
 <script type="text/javascript">
 const now1 = new Date();
@@ -12,14 +18,25 @@ var year = now1.getFullYear();
 var month = now1.getMonth()+1;
 var day = now1.getDate();
 
-document.write(year);
-</script>年
-<script type="text/javascript">
-document.write(month);
-</script>月
-<script type="text/javascript">
-document.write(day);
-</script>日
+
+
+function toKanzi(nums){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = nums.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+ 
+ var wareki = year-2018
+ 
+document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+toKanzi(month)+"月"+toKanzi(day)+"日";
+
+</script>
+
+
+
+
 </font>
 <hr color="E45B69" size="0.1px">
 <b><font style="font-size:90px;">
@@ -77,9 +94,8 @@ function toKanzi(nums){
  };
 document.querySelector('#view').innerText ="第" + toKanzi(num)+"番";
 </script>
-
 </font>
-<hr color="E45B69" size="0.1px"><br>
+<hr color="E45B69" size="0.1px">
 <font style="font-size:38px;">
 <b>
 <script type="text/javascript">
@@ -224,7 +240,7 @@ if (wshnum==5) wsh = "待てば成るでしょう";
 if (wshnum==6) wsh = "明後日には成る";
 if (wshnum==7) wsh = "来週まで待て";
 if (wshnum==8) wsh = "欲張りすぎるな";
-if (wshnum==9) wsh = "もう成っている";
+if (wshnum==9) wsh = "まもなく成る";
 if (wshnum==0) wsh = "これ以上は望むな"; 
 
 document.write(wsh); 
@@ -348,7 +364,7 @@ document.write(ill);
  
 .anim-box {
   animation: slideIn 4s cubic-bezier(0.25, 1.25, 0.5, 1) 1 forwards;
-  padding: 40px 40px;  box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); 
+  padding: 40px;  box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); 
   
   border: 2px solid #dddddd;
   
