@@ -1,4 +1,6 @@
-<center></script></b><br></font>
+ <center>
+<br><br><br>
+<div class="anim-box" style="background:#FDFAF5; width:80%"><br>
 <script type="text/javascript">
 const now1 = new Date();
 var year = now1.getFullYear();
@@ -62,8 +64,8 @@ document.write(ftn);
 第<script type="text/javascript">
 document.write(num);
 </script>番<br><br>
-<font size="6" face="sans-serif">
-
+<font size="6">
+<b>
 <script type="text/javascript">
 
 
@@ -102,8 +104,34 @@ if (num==32) twi = "追加予定";
 if (num==33) twi = "追加予定"; 
 
 document.write(twi); 
-</script>
+</script><br><br>
 
 
 
-</font></center>
+</font>
+</div>
+
+
+
+<style>
+ 
+ 
+.anim-box {
+  animation: slideIn 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+ 
+@keyframes slideIn {
+  0% {
+    transform: translateY(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+ 
+ 
+</style>
