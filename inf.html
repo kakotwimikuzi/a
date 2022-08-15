@@ -1,14 +1,5 @@
-<title>過去ツイ御籤</title>
+<title>無限過去ツイ御籤</title>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-237472465-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-237472465-1');
-</script>
 
 </head>
 <body>
@@ -166,12 +157,8 @@ document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+t
 <hr color="E45B69" size="0.1px">
 <b><font style="font-size:90px;">
 <script type="text/javascript">
-const now = new Date();
-var serial = (now.getFullYear()+now.getMonth()+now.getDate())*Math.PI
+var num = Math.floor( Math.random() * 33 );
 
-var number = serial.toString();
-var rand = number.substr(8,2);
-var num = Math.floor(rand/3);
 
 if (num==1) ftn = "大吉";
 if (num==2) ftn = "凶";
