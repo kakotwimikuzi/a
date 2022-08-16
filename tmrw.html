@@ -167,11 +167,11 @@ document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+t
 <b><font style="font-size:90px;">
 <script type="text/javascript">
 const now = new Date();
-var serial = (now.getFullYear()+now.getMonth()+now.getDate())*Math.PI
+var serial = (now.getFullYear()+now.getMonth()+now.getDate()+1)*Math.PI
 
 var number = serial.toString();
 var rand = number.substr(8,2);
-var num = Math.floor(rand/3)+1;
+var num = Math.floor(rand/3);
 
 if (num==1) ftn = "大吉";
 if (num==2) ftn = "凶";
@@ -301,7 +301,7 @@ if (num==31) twidate = "追加予定";
 if (num==32) twidate = "2020年10月03日 23:41:21"; 
 if (num==33) twidate = "2020年08月05日 11:49:34"; 
  
-document.write(twidate.link("https://twitter.com/b8ihua/status/1290836759220084737?s=21&t=NEpqVbQojtOupxLYy6bDWQ"); 
+document.write(twidate.link("https://twitter.com/b8ihua/status/1290836759220084737?s=21&t=NsukFsOeyJU64cTpCA0oQQ")); 
 </script>）
 <br><br>
 <script>
