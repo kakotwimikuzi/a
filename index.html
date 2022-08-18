@@ -554,7 +554,21 @@ document.write(ill);
 </div>
 
 
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
 
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+changeBG(bgurl)
+
+function changeBG(wIMG) {
+  document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+</script>
 <style>
  
  
@@ -582,7 +596,6 @@ document.write(ill);
  
  
  body {
-  background-image: url("https://mikuji.github.io/a/jh.jpg");
   background-size: cover;
 }
  
