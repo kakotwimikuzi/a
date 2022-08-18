@@ -1,4 +1,4 @@
-<title>明日の過去ツイ御籤</title>
+<title>過去ツイ御籤</title>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-237472465-1"></script>
@@ -127,9 +127,9 @@ popupImage();
 </script>
 <br><br><br><br><br><br>
 <center><b><font color="E45B69" style="font-size:38px;">
-<div class="anim-box" style="width:60% ">
+<div class="anim-box" style="width:60% " id="mkj">
 <div style="border: 2px double #E45B69; padding:0px;">
-<img src="https://mikuji.github.io/a/tit.PNG" width="100%">
+<img src="https://mikuji.github.io/a/titp.PNG" width="100%">
 </div>
 <div style="padding:6px;"></div>
 <div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
@@ -167,7 +167,7 @@ document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+t
 <b><font style="font-size:90px;">
 <script type="text/javascript">
 const now = new Date();
-var serial = (now.getFullYear()+now.getMonth()+now.getDate()+1)*Math.PI
+var serial = (now.getFullYear()+now.getMonth()+1+now.getDate())*Math.PI
 
 var number = serial.toString();
 var rand = number.substr(8,2);
@@ -554,7 +554,30 @@ document.write(ill);
 </div>
 
 
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
 
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+if ( hr < 25 && hr >= 19 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 19 && hr >= 17 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 17 && hr >= 7 ) mkjurl ="https://mikuji.github.io/a/paper.PNG";
+if ( hr < 7 && hr >= 0 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+
+changeBG(bgurl)
+changeP(mkjurl)
+
+function changeBG(wIMG) {
+  document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+function changeP(wIMG2) {
+  document.getElementById("mkj").style.backgroundImage = "url(" + wIMG2 + ")";
+}
+</script>
 <style>
  
  
@@ -582,7 +605,6 @@ document.write(ill);
  
  
  body {
-  background-image: url("https://mikuji.github.io/a/yoruu.PNG");
   background-size: cover;
 }
  
