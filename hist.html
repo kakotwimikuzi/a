@@ -1,12 +1,13 @@
 <title>過去ツイ御籤 | 御籤掛け</title>
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <body style=" background-image: url(https://mikuji.github.io/a/mkjbg.PNG); background-size: cover;">
 <br><br>
 <button onclick="location.href='https://mikuji.github.io/a/'" class="btn">
 <font style="font-size:30px;">◀︎ 戻る</font></button>
+ <br><br><br><br><br>
 <style>
 .btn{
-
-  margin-left: 20px;
+    margin-left: 20px;
     display: block;
     width: 150px;
     /*コレ*/background: transparent;
@@ -19,11 +20,2229 @@
     font-weight: bold;
 }
 </style>
-<br><br><br><br><br><br>
-<img src="https://mikuji.github.io/a/mkj1.PNG" width="100%">
-<img src="https://mikuji.github.io/a/mkj2.PNG" width="100%">
-<img src="https://mikuji.github.io/a/mkj3.PNG" width="100%">
-<img src="https://mikuji.github.io/a/mkj4.PNG" width="100%">
+
+
+<body style="background:black">
+
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+
+
+<div class="popup" id="js-popup">
+  <div class="popup-inner">
+  
+    <font style="font-size:35px;">
+    
+    
+<center><b><font color="E45B69" style="font-size:38px;">
+<div class="anim-box" style=" padding: 40px;  box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); border: 2px solid #dddddd;
+  " id="mkj">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/titp.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
+
+<div id="nowdate"></div>
+
+<font style="font-size:38px;">
+<script type="text/javascript">
+const now1 = new Date();
+var year = now1.getFullYear();
+var month = now1.getMonth()+1;
+var day = now1.getDate()-1;
+
+
+
+function toKanzi(num1s){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = num1s.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+ 
+ var wareki = year-2018
+ 
+document.querySelector('#nowdate').innerText ="令和" + toKanzi(wareki)+"年"+toKanzi(month)+"月"+toKanzi(day)+"日";
+
+</script>
+
+</font>
+<hr color="E45B69" size="0.1px">
+<b><font style="font-size:90px;">
+<script type="text/javascript">
+const now = new Date();
+var serial = (now.getFullYear()+now.getMonth()+now.getDate()-1)*Math.PI
+
+var num1ber = serial.toString();
+var rand = num1ber.substr(8,2);
+var num1 = Math.floor(rand/3);
+
+if (num1==1) ftn = "大吉";
+if (num1==2) ftn = "凶";
+if (num1==3) ftn = "中吉";
+if (num1==4) ftn = "吉";
+if (num1==5) ftn = "吉";
+if (num1==6) ftn = "小吉";
+if (num1==7) ftn = "吉";
+if (num1==8) ftn = "中吉";
+if (num1==9) ftn = "大吉";
+if (num1==10) ftn = "吉";
+if (num1==11) ftn = "小吉";
+if (num1==12) ftn = "吉";
+if (num1==13) ftn = "大凶";
+if (num1==14) ftn = "大吉";
+if (num1==15) ftn = "中吉";
+if (num1==16) ftn = "小吉";
+if (num1==17) ftn = "大吉";
+if (num1==18) ftn = "凶";
+if (num1==19) ftn = "小吉";
+if (num1==20) ftn = "小吉";
+if (num1==21) ftn = "中吉";
+if (num1==22) ftn = "凶";
+if (num1==23) ftn = "吉";
+if (num1==24) ftn = "大吉";
+if (num1==25) ftn = "中吉";
+if (num1==26) ftn = "吉";
+if (num1==27) ftn = "大吉";
+if (num1==28) ftn = "凶";
+if (num1==29) ftn = "追加予定";
+if (num1==30) ftn = "大凶";
+if (num1==31) ftn = "吉";
+if (num1==32) ftn = "大凶"; 
+if (num1==33) ftn = "大吉"; 
+ 
+document.write(ftn); 
+</script><br></font><font style="font-size:30px;">
+<div id="view"></div>
+<script>
+function toKanzi(num1s){
+ var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+ let befText = num1s.toString();
+ let str = "";
+ for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+ return str;
+ };
+document.querySelector('#view').innerText ="第" + toKanzi(num1)+"番";
+</script>
+</font>
+<hr color="E45B69" size="0.1px">
+<font style="font-size:38px;">
+<b>
+<script type="text/javascript">
+
+
+if (num1==0) twi = "追加予定"; 
+if (num1==1) twi = "これ全く下心ないんだけど女子更衣室の中ってどうなってんの？<br>あと全く下心ないんだけどみんなどんな下着つけてんの？";
+if (num1==2) twi = "もう医学部諦めて生物学部行って、ゴリラに手コキ覚えさせて一生遊んで暮らそうかな";
+if (num1==3) twi = "彩、南南東の方角向いて恵方巻食べてるなら北北西の方角にちんこ向けてたらフェラしてもらえるってこと？？";
+if (num1==4) twi = "勃起はした";
+if (num1==5) twi = "触れ合ってるとこから全身まですごい気持ちいんだけど新手のオナニー？";
+if (num1==6) twi = "限界童貞だから筋トレする理由はセックス";
+if (num1==7) twi = "願い事、「彩と」っていうと神も分からないだろうから「隣にいる子、彩って言うんですけど」から始めた";
+if (num1==8) twi = "よりかかってるよりかかってるよりかかってる<br>まじ溶ける死ぬ";
+if (num1==9) twi = "【速報】<br>有能わい、彩と初詣の約束をする！！！！！！！！";
+if (num1==10) twi = "海人とか中2で梶原にフェラしてもらってたらしいな<br>羨ましすぎる";
+if (num1==11) twi = "クリぼっちだしオナホも無い";
+if (num1==12) twi = "俺医大受かったら彩に頭撫でてもらいたい";
+if (num1==13) twi = "ﾝﾛﾎﾞ（ちんちんをしまう音）";
+if (num1==14) twi = "明晰夢で折笠出てきたからおっぱい触ったら金縛りにあった";
+if (num1==15) twi = "右脳（パンツ見えそう...）<br>左脳（閉じろよ品無いな）<br>↓<br>右脳左脳が導き出した答え<br>「パンツ見せろよ品無いな」";
+if (num1==16) twi = "家に県警が来て俺のキモツイ印刷したやつ突きつけられたら失禁しちゃう";
+if (num1==17) twi = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告";
+if (num1==18) twi = "親にオナホバレて草";
+if (num1==19) twi = "「ガシマン」という子供を餓死させてしまう悪い怪人";
+if (num1==20) twi = "Sc Ti V Cr Mn を「スコッチ 暴露マン」と覚えてる奴がいるんですよ〜<br>な～〜にぃ〜～!? やっちまったな！！！<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>マンガンをエロい目で見てしまうよ〜";
+if (num1==21) twi = "ベッド脇のゴミ箱のティッシュ、桃の香りして草<br>僕の子供、これが由来で桃香になるらしい";
+if (num1==22) twi = "わいのヒモカ返してくれや";
+if (num1==23) twi = "尿道にカメラをつけて胃カメラとしてフェラチオできればいいのに（ちんこの短歌、ちん歌）";
+if (num1==24) twi = "zenly被閲覧数の数だけ射精するワニ";
+if (num1==25) twi = "高場「俺は高校生探偵、高場俊輔!! <br>同級生の結丸と自習室に行って・・・<br>めちゃくちゃ疲れてしまった！<br>寝ることに夢中になっていたオレは・・・<br>オナニーをすることができなかった・・・<br>俺はそのまま眠りにつき、目が覚めたら・・・」<br><br>チンコナン「ちんこがド勃起していた!!」<br>";
+if (num1==26) twi = "スティッチに見られながらオナニーしよ";
+if (num1==27) twi = "ひるまちゃん😃<br>オレの チン毛も、矯正 してほしいです。🍀";
+if (num1==28) twi = "ワイ様、鬼久しぶりのゴキブリとの邂逅に発狂し親呼びキンチョールで撃破するも、ベッドの下に入ってしまい、ベッドの下にはおっぱい隠してるため「まぁ...なんとかするわ」となんとか一命を取り留める";
+if (num1==29) twi = "追加予定";
+if (num1==30) twi = "追加予定";
+if (num1==31) twi = "追加予定";
+if (num1==32) twi = "ﾝﾛﾎﾞ（ちんちんをしまう音）"; 
+if (num1==33) twi = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告"; 
+
+document.write(twi); 
+</script>
+<br>
+<font style="font-size:30px;">
+（日時：<script>
+if (num1==0) twidate = "追加予定"; 
+if (num1==1) twidate = "2021年10月12日 14:08:12";
+if (num1==2) twidate = "2021年03月03日 21:12:57";
+if (num1==3) twidate = "2021年02月02日 20:08:23";
+if (num1==4) twidate = "2021年01月03日 20:21:40";
+if (num1==5) twidate = "2021年01月03日 14:02:41";
+if (num1==6) twidate = "2021年01月11日 01:27:47";
+if (num1==7) twidate = "2021年01月03日 23:46:20";
+if (num1==8) twidate = "2021年01月03日 17:24:55";
+if (num1==9) twidate = "2021年01月01日 00:18:26";
+if (num1==10) twidate = "2021年10月18日 06:03:59";
+if (num1==11) twidate = "2020年12月24日 23:18:49";
+if (num1==12) twidate = "2020年10月30日 00:27:58";
+if (num1==13) twidate = "2020年10月03日 23:41:21";
+if (num1==14) twidate = "2020年09月27日 04:47:36";
+if (num1==15) twidate = "2020年09月18日 23:39:35";
+if (num1==16) twidate = "2020年08月10日 00:58:16";
+if (num1==17) twidate = "2020年08月05日 11:49:34";
+if (num1==18) twidate = "2020年07月07日 18:22:22";
+if (num1==19) twidate = "2021年03月04日 00:06:04";
+if (num1==20) twidate = "2021年03月29日 23:48:52";
+if (num1==21) twidate = "2021年03月30日 22:26:59";
+if (num1==22) twidate = "2021年04月05日 16:15:44";
+if (num1==23) twidate = "2021年04月10日 21:11:32";
+if (num1==24) twidate = "2021年04月27日 21:54:29";
+if (num1==25) twidate = "2021年05月16日 08:52:09";
+if (num1==26) twidate = "2021年05月13日 23:46:20";
+if (num1==27) twidate = "2021年07月19日 21:37:32";
+if (num1==28) twidate = "2021年06月17日 21:53:15";
+if (num1==30) twidate = "追加予定";
+if (num1==31) twidate = "追加予定";
+if (num1==32) twidate = "2020年10月03日 23:41:21"; 
+if (num1==33) twidate = "2020年08月05日 11:49:34"; 
+
+if (num1==0) twilink = "追加予定"; 
+
+if (num1==1) twilink = "https://twilinktter.com/b8ihua/status/1447791189231476756?s=21&t=dFDkD9GoV6sPU4_uSuLn6w";
+
+if (num1==2) twilink = "https://twitter.com/b8ihua/status/1367085586478080000?s=21&t=jm5ri50Y51gEt6k22mPXRg"
+
+if (num1==3) twilink = "https://twitter.com/b8ihua/status/1356560087758766080?s=21&t=c6YtqrQjekywktIJz_if4A";
+
+if (num1==4) twilink = "https://twitter.com/b8ihua/status/1345691796257394689?s=21&t=jd5YmARr6tOV3DZ-RYDhDw";
+
+if (num1==5) twilink = "https://twitter.com/b8ihua/status/1345596421068607489?s=21&t=VEZI-C7fAVOV1yJUpEmGwg";
+
+if (num1==6) twilink = "https://twitter.com/b8ihua/status/1348305547838164999?s=21&t=RcHw4G3whu_Owb1F35NCkw";
+
+if (num1==7) twilink = "https://twitter.com/b8ihua/status/1345743302126026754?s=21&t=qcccuB1p7aU1XTKMT-ew9Q";
+
+if (num1==8) twilink = "https://twitter.com/b8ihua/status/1345647316624031744?s=21&t=yqlt1V7XgQm-M9xgcmZWyQ";
+
+if (num1==9) twilink = "https://twitter.com/b8ihua/status/1344664217018748928?s=21&t=gmOs6fv0sr61bCmDsRhDYg";
+
+if (num1==10) twilink = "https://twitter.com";
+
+if (num1==11) twilink = "https://twitter.com/b8ihua/status/1342112500054073349?s=21&t=ZneDz_Rgm17Hv0gxHjh8Yw";
+
+if (num1==12) twilink = "https://twitter.com/b8ihua/status/1321836178337787905?s=21&t=9vMT2z620wclIC2n8xdWyw";
+
+if (num1==13) twilink = "https://twitter.com";
+
+if (num1==14) twilink = "https://twitter.com/b8ihua/status/1309942719020556288?s=21&t=WwYTNbvAP2_ejdZyrNpgtw";
+
+if (num1==15) twilink = "https://twitter.com/b8ihua/status/1306966101826306048?s=21&t=vGe__itBFcHsnwXNUvm2jQ";
+
+if (num1==16) twilink = "https://twitter.com/b8ihua/status/1292490389979426816?s=21&t=MNvdpCK3LXVvnh4oP9X2RQ";
+
+if (num1==17) twilink = "https://twitter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A";
+
+if (num1==18) twilink = "https://twitter.com/b8ihua/status/1280431956715384833?s=21&t=qi4_vqarihervmSXF0wbHw";
+
+if (num1==19) twilink = "https://twitter.com/b8ihua/status/1367129150138376195?s=21&t=FDnBg_Ie2SN8NGhOHcSRLw";
+
+if (num1==20) twilink = "https://twitter.com/b8ihua/status/1376546907942580224?s=21&t=FH3Qphs5wotQh6cUCfTKDg";
+
+if (num1==21) twilink = "https://twitter.com/b8ihua/status/1376888690262204417?s=21&t=Qa2djuDIx1kVZ_fcGgfezg";
+
+if (num1==22) twilink = "https://twitter.com/b8ihua/status/1378969588608552964?s=21&t=YMiLE2pYCs3_qv7-lMloRA";
+
+if (num1==23) twilink = "https://twitter.com/b8ihua/status/1380855968561426436?s=21&t=oRTpJnNPZSQvtZ0NiTEdIw";
+
+if (num1==24) twilink = "https://twitter.com/b8ihua/status/1387027372554088456?s=21&t=1VSqrrgOwvz42QO9S--eBg";
+
+if (num1==25) twilink = "https://twitter.com/b8ihua/status/1393715860041125891?s=21&t=IqAOfwSIBOUy7ZIcLcyLxw";
+
+if (num1==26) twilink = "https://twitter.com/b8ihua/status/1392853723135713287?s=21&t=aPMr7g0ZZzOr1qWS8pBK8w";
+
+if (num1==27) twilink = "https://twitter.com/b8ihua/status/1417101296037883907?s=21&t=xNhrkEnOlVAbXG0iNnxwrQ";
+
+if (num1==28) twilink = "https://twitter.com/b8ihua/status/1405508841366720516?s=21&t=rckoqnTbAHUAbEjFXOcPyw";
+
+if (num1==29) twilink = "追加予定";
+
+if (num1==30) twilink = "追加予定";
+
+if (num1==31) twilink = "追加予定";
+
+if (num1==32) twilink = "https://twitter.com"; 
+
+if (num1==33) twilink = "https://twitter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A"; 
+
+
+ 
+document.write(twidate.link(twilink)); 
+</script>）
+<br><br>
+<script>
+if (num1==0) sp = "追加予定"; 
+if (num1==1) sp = "高校に女子更衣室しかないため更衣室に入ったことないから気になるという旨の呟き。行ったことない場所に行ってみると吉";
+if (num1==2) sp = "ゴリラの握力は500kgとされており、優しく手コキしないと陰茎は潰れる。例え権力を持っていても謙って接すれば吉に傾く。";
+if (num1==3) sp = "節分の日の呟き。巻き寿司を食べると吉。性は急ぐべからず。";
+if (num1==4) sp = "初詣に行った際に勃起をしたという旨の呟き。勃起は生命力の象徴であるから吉兆である。出産安し。";
+if (num1==5) sp = "初詣に行った際に触れ合ってるところが気持ちよかったという旨の呟き。待ち人はじきに現る。";
+if (num1==6) sp = "筋トレするのが吉。待ち人現れ、恋愛は成就する。力斗の様になれたら大吉。";
+if (num1==7) sp = "初詣の願い事の際に、神に分かりやすい説明をした呟き。相手と対話する際は相手のことを思い、自分勝手に話さないのがよい。";
+if (num1==8) sp = "初詣の際に、電車で寄りかかってきて溶けそうになったという呟き。旅行は安全にうまくいく。";
+if (num1==9) sp = "非常によい兆し。何事もうまくいく。嫌いな人のコラ画像を作るといっそう吉。";
+if (num1==10) sp = "勉学は奮わない。今日は休んで良い。セフレを作るべし。";
+if (num1==11) sp = "オナホがクリスマス前に壊れてしまい、寂しいクリスマスを過ごしたという呟き。大切なものを遺失するかもしれない。ケーキを食べると吉。";
+if (num1==12) sp = "勉学は成就する。今まで後回しにしてきた勉強をするとうまくいく。自分で自分の頭を撫でるとよい。";
+if (num1==13) sp = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。";
+if (num1==14) sp = "よい運勢だが、調子に乗ると凶に転落する。欲を出さず慎んで過ごせば良い日になる。また、良い夢が見れる。";
+if (num1==15) sp = "右脳は感覚的、左脳は理論的な思考をすると言われている。この乖離が激しいと思考が難しくなる。吉事が舞い込むが、勉学は控えよ。";
+if (num1==16) sp = "明日起きたら彩になってないかな や 自分のクローン作って豊胸手術させようかな の様なキモツイをしすぎた日の呟き。今日した悪事は即時ばれる。 ";
+if (num1==17) sp = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。";
+if (num1==18) sp = "オナホを洗った後に置いたままにして親にばれた際の呟き。掃除用具だよと謎の嘘をついた。今日は安静に過ごし勉学に励め";
+if (num1==19) sp = "物事を急いては凶。何事も落ち着いて進めると成就するだろう。勉学に励め";
+if (num1==20) sp = "勉学に励めば、一つの物事を多角的に見ることができる。一見不要な知識も必ず役に立つだろう。ラッキーアイテムはビックリマンコ";
+if (num1==21) sp = "出産は安し。可もなく不可もない日になるだろう。桃を食べると吉。";
+if (num1==22) sp = "自動チャージのカードを失った際の呟き。金運は悪い。努力して努力に見合った対価を得るべし。";
+if (num1==23) sp = "病災に気を付けよ。しかしすぐ快復する。時を待って安静に過ごすと良い。ラッキーアイテムは尿道。";
+if (num1==24) sp = "zenlyで人に見られると嬉しいので射精してしまうという呟き。思わぬ吉報が舞い込むかもしれない。鰐革の財布を持っていると吉。";
+if (num1==25) sp = "勉学に励むべき。吉事は一度逃してもまた舞い込むから焦らなくて良い。疲れた時は睡眠を取り快復すれば良い日を送れる。";
+if (num1==26) sp = "浅香とお揃いの縫いぐるみに見られながら自慰をすれば、浅香に見られながら自慰をするのと同じである。縫いぐるみに見られながら自慰をすると吉。";
+if (num1==27) sp = "現存する中で一番気持ち悪い呟きかもしれない。しかし、今日はこれより不快なことは起こらないため吉である。";
+if (num1==28) sp = "凶事が起こり、また助けも乞えない状況になる。しかしそれは自分の隠し事のせいであるので、それを除けば吉に傾く。";
+if (num1==29) sp = "追加予定";
+if (num1==30) sp = "追加予定";
+if (num1==31) sp = "追加予定";
+if (num1==32) sp = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。"; 
+if (num1==33) sp = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。"; 
+document.write(sp); 
+</script>
+<script>
+var num1berb = serial.toString();
+var wshnum1 = num1berb.substr(9,1);
+var mchnum1 = num1berb.substr(10,1);
+var usenum1 = num1berb.substr(11,1);
+var stdnum1 = num1berb.substr(12,1);
+var luvnum1 = num1berb.substr(13,1);
+var bernum1 = num1berb.substr(14,1);
+var illnum1 = num1berb.substr(15,1);
+</script>
+<br><br>
+<hr color="E45B69" size="0.1px">
+<table width="100%" style="font-size:35px; color:E45B69;">
+	<tbody>
+		<tr>
+			<td><b>願望</b></td>
+			<td><b><script>
+if (wshnum1==1) wsh = "待てば成るがほぼ無理";
+if (wshnum1==2) wsh = "すぐに成就するでしょう";
+if (wshnum1==3) wsh = "明日には成る";
+if (wshnum1==4) wsh = "無理である";
+if (wshnum1==5) wsh = "待てば成るでしょう";
+if (wshnum1==6) wsh = "明後日には成る";
+if (wshnum1==7) wsh = "来週まで待て";
+if (wshnum1==8) wsh = "欲張りすぎるな";
+if (wshnum1==9) wsh = "まもなく成る";
+if (wshnum1==0) wsh = "これ以上は望むな"; 
+
+document.write(wsh); 
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>待人</b></td>
+			<td><b><script>
+if (mchnum1==1) mch = "くそぶすが現る";
+if (mchnum1==2) mch = "きもい者が来る";
+if (mchnum1==3) mch = "遅けれど現る";
+if (mchnum1==4) mch = "近くにいる";
+if (mchnum1==5) mch = "焦るべからず";
+if (mchnum1==6) mch = "来る 心して待て";
+if (mchnum1==7) mch = "船木が来る";
+if (mchnum1==8) mch = "義輝が来る";
+if (mchnum1==9) mch = "元恋人が現る";
+if (mchnum1==0) mch = "来る 成就する"; 
+
+document.write(mch);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>失物</b></td>
+			<td><b><script>
+if (usenum1==1) use = "膣の中にある";
+if (usenum1==2) use = "膣の中にある";
+if (usenum1==3) use = "膀胱の中にある";
+if (usenum1==4) use = "膀胱の中にある";
+if (usenum1==5) use = "元恋人の家にある";
+if (usenum1==6) use = "寝床の下にある";
+if (usenum1==7) use = "学校にある";
+if (usenum1==8) use = "船木が持つている";
+if (usenum1==9) use = "捨てた";
+if (usenum1==0) use = "見つからず"; 
+
+document.write(use);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>学問</b></td>
+			<td><b><script>
+if (stdnum1==1) std = "徹夜してやれ";
+if (stdnum1==2) std = "苦手な所をやれ";
+if (stdnum1==3) std = "今日は休んで良い";
+if (stdnum1==4) std = "壁に当たる";
+if (stdnum1==5) std = "よく進む";
+if (stdnum1==6) std = "励みすぎるな";
+if (stdnum1==7) std = "チンポ学をやれ";
+if (stdnum1==8) std = "足し算で間違える";
+if (stdnum1==9) std = "いつもより励め";
+if (stdnum1==0) std = "壁に当たる"; 
+
+document.write(std);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>恋愛</b></td>
+			<td><b><script>
+if (luvnum1==1) luv = "じきに成る";
+if (luvnum1==2) luv = "愛せ 倖せあり";
+if (luvnum1==3) luv = "船木と成る";
+if (luvnum1==4) luv = "義輝と成る";
+if (luvnum1==5) luv = "隣の席の人と成る";
+if (luvnum1==6) luv = "成らない 待て";
+if (luvnum1==7) luv = "セフレはできる";
+if (luvnum1==8) luv = "ただちに成る";
+if (luvnum1==9) luv = "誘えば成る";
+if (luvnum1==0) luv = "誘えば成る"; 
+
+document.write(luv);
+</script></b></td>
+		</tr>
+		<tr>
+			<td><b>出産</b></td>
+			<td><b><script>
+if (bernum1==1) ber = "精神を安定すれば安し";
+if (bernum1==2) ber = "待望の暗示";
+if (bernum1==3) ber = "すぐに終る";
+if (bernum1==4) ber = "医者をよく選べ";
+if (bernum1==5) ber = "難産ではない";
+if (bernum1==6) ber = "難産になる";
+if (bernum1==7) ber = "安からず";
+if (bernum1==8) ber = "とても安し";
+if (bernum1==9) ber = "難産になる";
+if (bernum1==0) ber = "落ち着けば安し"; 
+
+document.write(ber);
+</script></b></b></td>
+		</tr>
+		<tr>
+			<td><b>病気</b></td>
+			<td><b><script>
+if (illnum1==1) ill = "日頃を気をつけよ";
+if (illnum1==2) ill = "手をよく洗え";
+if (illnum1==3) ill = "よく寝れば罹らない";
+if (illnum1==4) ill = "気を病む";
+if (illnum1==5) ill = "疲れを取れ";
+if (illnum1==6) ill = "全快早し";
+if (illnum1==7) ill = "性器が大きくなる病に罹る";
+if (illnum1==8) ill = "性病になる";
+if (illnum1==9) ill = "尿が出なくなる";
+if (illnum1==0) ill = "手をよく洗え"; 
+
+document.write(ill);
+</script></b></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</div>
+</font>
+</div>
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
+
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+if ( hr < 25 && hr >= 19 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 19 && hr >= 17 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 17 && hr >= 7 ) mkjurl ="https://mikuji.github.io/a/paper.PNG";
+if ( hr < 7 && hr >= 0 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
+
+
+changeP(mkjurl)
+
+function changeBG(wIMG) {
+  document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+function changeP(wIMG2) {
+  document.getElementById("mkj").style.backgroundImage = "url(" + wIMG2 + ")";
+}
+</script>
+
+
+  </div>
+  <div class="black-background" id="js-black-bg"></div>
+</div>
+
+<img id="js-show-popup" src="https://mikuji.github.io/a/mkj1.PNG" width="100%">
+<div style="padding:3px;"></div>
+
+
+
+
+<div class="popup2" id="js-popup2">
+  <div class="popup-inner2">
+
+    <font style="font-size:35px;">
+<center><b><font color="E45B69" style="font-size:38px;">
+<div class="anim-box" style="padding: 40px; box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); border: 2px solid #dddddd;
+" id="mkj2">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/titp.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
+
+<div id="nowdate2"></div>
+
+<font style="font-size:38px;">
+<script type="text/javascript">
+var year2 = now1.getFullYear();
+var month2 = now1.getMonth()+1;
+var day2 = now1.getDate()-2;
+
+
+
+function toKanzi(num2s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num2s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+
+var wareki2 = year2-2018;
+
+document.querySelector('#nowdate2').innerText ="令和" + toKanzi(wareki2)+"年"+toKanzi(month2)+"月"+toKanzi(day2)+"日";
+
+
+</script>
+
+
+</font>
+<hr color="E45B69" size="0.1px">
+<b><font style="font-size:90px;">
+<script type="text/javascript">
+
+var serial2 = (now.getFullYear()+now.getMonth()+now.getDate()-2)*Math.PI
+
+var num2ber2 = serial2.toString();
+var rand2 = num2ber2.substr(8,2);
+var num2 = Math.floor(rand2 /3);
+
+
+
+if (num2==1) ftn2 = "大吉";
+if (num2==2) ftn2 = "凶";
+if (num2==3) ftn2 = "中吉";
+if (num2==4) ftn2 = "吉";
+if (num2==5) ftn2 = "吉";
+if (num2==6) ftn2 = "小吉";
+if (num2==7) ftn2 = "吉";
+if (num2==8) ftn2 = "中吉";
+if (num2==9) ftn2 = "大吉";
+if (num2==10) ftn2 = "吉";
+if (num2==11) ftn2 = "小吉";
+if (num2==12) ftn2 = "吉";
+if (num2==13) ftn2 = "大凶";
+if (num2==14) ftn2 = "大吉";
+if (num2==15) ftn2 = "中吉";
+if (num2==16) ftn2 = "小吉";
+if (num2==17) ftn2 = "大吉";
+if (num2==18) ftn2 = "凶";
+if (num2==19) ftn2 = "小吉";
+if (num2==20) ftn2 = "小吉";
+if (num2==21) ftn2 = "中吉";
+if (num2==22) ftn2 = "凶";
+if (num2==23) ftn2 = "吉";
+if (num2==24) ftn2 = "大吉";
+if (num2==25) ftn2 = "中吉";
+if (num2==26) ftn2 = "吉";
+if (num2==27) ftn2 = "大吉";
+if (num2==28) ftn2 = "凶";
+if (num2==29) ftn2 = "追加予定";
+if (num2==30) ftn2 = "大凶";
+if (num2==31) ftn2 = "吉";
+if (num2==32) ftn2 = "大凶"; 
+if (num2==33) ftn2 = "大吉"; 
+
+document.write(ftn2); 
+
+</script><br></font><font style="font-size:30px;">
+<div id="view2"></div>
+<script>
+function toKanzi(num2s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num2s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+document.querySelector('#view2').innerText ="第" + toKanzi(num2)+"番";
+</script>
+</font>
+<hr color="E45B69" size="0.1px">
+<font style="font-size:38px;">
+<b>
+<script type="text/javascript">
+
+
+if (num2==0) twi2 = "追加予定"; 
+if (num2==1) twi2 = "これ全く下心ないんだけど女子更衣室の中ってどうなってんの？<br>あと全く下心ないんだけどみんなどんな下着つけてんの？";
+if (num2==2) twi2 = "もう医学部諦めて生物学部行って、ゴリラに手コキ覚えさせて一生遊んで暮らそうかな";
+if (num2==3) twi2 = "彩、南南東の方角向いて恵方巻食べてるなら北北西の方角にちんこ向けてたらフェラしてもらえるってこと？？";
+if (num2==4) twi2 = "勃起はした";
+if (num2==5) twi2 = "触れ合ってるとこから全身まですごい気持ちいんだけど新手のオナニー？";
+if (num2==6) twi2 = "限界童貞だから筋トレする理由はセックス";
+if (num2==7) twi2 = "願い事、「彩と」っていうと神も分からないだろうから「隣にいる子、彩って言うんですけど」から始めた";
+if (num2==8) twi2 = "よりかかってるよりかかってるよりかかってる<br>まじ溶ける死ぬ";
+if (num2==9) twi2 = "【速報】<br>有能わい、彩と初詣の約束をする！！！！！！！！";
+if (num2==10) twi2 = "海人とか中2で梶原にフェラしてもらってたらしいな<br>羨ましすぎる";
+if (num2==11) twi2 = "クリぼっちだしオナホも無い";
+if (num2==12) twi2 = "俺医大受かったら彩に頭撫でてもらいたい";
+if (num2==13) twi2 = "ﾝﾛﾎﾞ（ちんちんをしまう音）";
+if (num2==14) twi2 = "明晰夢で折笠出てきたからおっぱい触ったら金縛りにあった";
+if (num2==15) twi2 = "右脳（パンツ見えそう...）<br>左脳（閉じろよ品無いな）<br>↓<br>右脳左脳が導き出した答え<br>「パンツ見せろよ品無いな」";
+if (num2==16) twi2 = "家に県警が来て俺のキモツイ印刷したやつ突きつけられたら失禁しちゃう";
+if (num2==17) twi2 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告";
+if (num2==18) twi2 = "親にオナホバレて草";
+if (num2==19) twi2 = "「ガシマン」という子供を餓死させてしまう悪い怪人";
+if (num2==20) twi2 = "Sc Ti V Cr Mn を「スコッチ 暴露マン」と覚えてる奴がいるんですよ〜<br>な～〜にぃ〜～!? やっちまったな！！！<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>マンガンをエロい目で見てしまうよ〜";
+if (num2==21) twi2 = "ベッド脇のゴミ箱のティッシュ、桃の香りして草<br>僕の子供、これが由来で桃香になるらしい";
+if (num2==22) twi2 = "わいのヒモカ返してくれや";
+if (num2==23) twi2 = "尿道にカメラをつけて胃カメラとしてフェラチオできればいいのに（ちんこの短歌、ちん歌）";
+if (num2==24) twi2 = "zenly被閲覧数の数だけ射精するワニ";
+if (num2==25) twi2 = "高場「俺は高校生探偵、高場俊輔!! <br>同級生の結丸と自習室に行って・・・<br>めちゃくちゃ疲れてしまった！<br>寝ることに夢中になっていたオレは・・・<br>オナニーをすることができなかった・・・<br>俺はそのまま眠りにつき、目が覚めたら・・・」<br><br>チンコナン「ちんこがド勃起していた!!」<br>";
+if (num2==26) twi2 = "スティッチに見られながらオナニーしよ";
+if (num2==27) twi2 = "ひるまちゃん😃<br>オレの チン毛も、矯正 してほしいです。🍀";
+if (num2==28) twi2 = "ワイ様、鬼久しぶりのゴキブリとの邂逅に発狂し親呼びキンチョールで撃破するも、ベッドの下に入ってしまい、ベッドの下にはおっぱい隠してるため「まぁ...なんとかするわ」となんとか一命を取り留める";
+if (num2==29) twi2 = "追加予定";
+if (num2==30) twi2 = "追加予定";
+if (num2==31) twi2 = "追加予定";
+if (num2==32) twi2 = "ﾝﾛﾎﾞ（ちんちんをしまう音）"; 
+if (num2==33) twi2 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告"; 
+
+document.write(twi2); 
+</script>
+<br>
+<font style="font-size:30px;">
+（日時：<script>
+if (num2==0) twi2date = "追加予定"; 
+if (num2==1) twi2date = "2021年10月12日 14:08:12";
+if (num2==2) twi2date = "2021年03月03日 21:12:57";
+if (num2==3) twi2date = "2021年02月02日 20:08:23";
+if (num2==4) twi2date = "2021年01月03日 20:21:40";
+if (num2==5) twi2date = "2021年01月03日 14:02:41";
+if (num2==6) twi2date = "2021年01月11日 01:27:47";
+if (num2==7) twi2date = "2021年01月03日 23:46:20";
+if (num2==8) twi2date = "2021年01月03日 17:24:55";
+if (num2==9) twi2date = "2021年01月01日 00:18:26";
+if (num2==10) twi2date = "2021年10月18日 06:03:59";
+if (num2==11) twi2date = "2020年12月24日 23:18:49";
+if (num2==12) twi2date = "2020年10月30日 00:27:58";
+if (num2==13) twi2date = "2020年10月03日 23:41:21";
+if (num2==14) twi2date = "2020年09月27日 04:47:36";
+if (num2==15) twi2date = "2020年09月18日 23:39:35";
+if (num2==16) twi2date = "2020年08月10日 00:58:16";
+if (num2==17) twi2date = "2020年08月05日 11:49:34";
+if (num2==18) twi2date = "2020年07月07日 18:22:22";
+if (num2==19) twi2date = "2021年03月04日 00:06:04";
+if (num2==20) twi2date = "2021年03月29日 23:48:52";
+if (num2==21) twi2date = "2021年03月30日 22:26:59";
+if (num2==22) twi2date = "2021年04月05日 16:15:44";
+if (num2==23) twi2date = "2021年04月10日 21:11:32";
+if (num2==24) twi2date = "2021年04月27日 21:54:29";
+if (num2==25) twi2date = "2021年05月16日 08:52:09";
+if (num2==26) twi2date = "2021年05月13日 23:46:20";
+if (num2==27) twi2date = "2021年07月19日 21:37:32";
+if (num2==28) twi2date = "2021年06月17日 21:53:15";
+if (num2==30) twi2date = "追加予定";
+if (num2==31) twi2date = "追加予定";
+if (num2==32) twi2date = "2020年10月03日 23:41:21"; 
+if (num2==33) twi2date = "2020年08月05日 11:49:34"; 
+
+if (num2==0) twi2link = "追加予定"; 
+
+if (num2==1) twi2link = "https://twi2linktter.com/b8ihua/status/1447791189231476756?s=21&t=dFDkD9GoV6sPU4_uSuLn6w";
+
+if (num2==2) twi2link = "https://twi2tter.com/b8ihua/status/1367085586478080000?s=21&t=jm5ri50Y51gEt6k22mPXRg"
+
+if (num2==3) twi2link = "https://twi2tter.com/b8ihua/status/1356560087758766080?s=21&t=c6YtqrQjekywktIJz_if4A";
+
+if (num2==4) twi2link = "https://twi2tter.com/b8ihua/status/1345691796257394689?s=21&t=jd5YmARr6tOV3DZ-RYDhDw";
+
+if (num2==5) twi2link = "https://twi2tter.com/b8ihua/status/1345596421068607489?s=21&t=VEZI-C7fAVOV1yJUpEmGwg";
+
+if (num2==6) twi2link = "https://twi2tter.com/b8ihua/status/1348305547838164999?s=21&t=RcHw4G3whu_Owb1F35NCkw";
+
+if (num2==7) twi2link = "https://twi2tter.com/b8ihua/status/1345743302126026754?s=21&t=qcccuB1p7aU1XTKMT-ew9Q";
+
+if (num2==8) twi2link = "https://twi2tter.com/b8ihua/status/1345647316624031744?s=21&t=yqlt1V7XgQm-M9xgcmZWyQ";
+
+if (num2==9) twi2link = "https://twi2tter.com/b8ihua/status/1344664217018748928?s=21&t=gmOs6fv0sr61bCmDsRhDYg";
+
+if (num2==10) twi2link = "https://twi2tter.com";
+
+if (num2==11) twi2link = "https://twi2tter.com/b8ihua/status/1342112500054073349?s=21&t=ZneDz_Rgm17Hv0gxHjh8Yw";
+
+if (num2==12) twi2link = "https://twi2tter.com/b8ihua/status/1321836178337787905?s=21&t=9vMT2z620wclIC2n8xdWyw";
+
+if (num2==13) twi2link = "https://twi2tter.com";
+
+if (num2==14) twi2link = "https://twi2tter.com/b8ihua/status/1309942719020556288?s=21&t=WwYTNbvAP2_ejdZyrNpgtw";
+
+if (num2==15) twi2link = "https://twi2tter.com/b8ihua/status/1306966101826306048?s=21&t=vGe__itBFcHsnwXNUvm2jQ";
+
+if (num2==16) twi2link = "https://twi2tter.com/b8ihua/status/1292490389979426816?s=21&t=MNvdpCK3LXVvnh4oP9X2RQ";
+
+if (num2==17) twi2link = "https://twi2tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A";
+
+if (num2==18) twi2link = "https://twi2tter.com/b8ihua/status/1280431956715384833?s=21&t=qi4_vqarihervmSXF0wbHw";
+
+if (num2==19) twi2link = "https://twi2tter.com/b8ihua/status/1367129150138376195?s=21&t=FDnBg_Ie2SN8NGhOHcSRLw";
+
+if (num2==20) twi2link = "https://twi2tter.com/b8ihua/status/1376546907942580224?s=21&t=FH3Qphs5wotQh6cUCfTKDg";
+
+if (num2==21) twi2link = "https://twi2tter.com/b8ihua/status/1376888690262204417?s=21&t=Qa2djuDIx1kVZ_fcGgfezg";
+
+if (num2==22) twi2link = "https://twi2tter.com/b8ihua/status/1378969588608552964?s=21&t=YMiLE2pYCs3_qv7-lMloRA";
+
+if (num2==23) twi2link = "https://twi2tter.com/b8ihua/status/1380855968561426436?s=21&t=oRTpJnNPZSQvtZ0NiTEdIw";
+
+if (num2==24) twi2link = "https://twi2tter.com/b8ihua/status/1387027372554088456?s=21&t=1VSqrrgOwvz42QO9S--eBg";
+
+if (num2==25) twi2link = "https://twi2tter.com/b8ihua/status/1393715860041125891?s=21&t=IqAOfwSIBOUy7ZIcLcyLxw";
+
+if (num2==26) twi2link = "https://twi2tter.com/b8ihua/status/1392853723135713287?s=21&t=aPMr7g0ZZzOr1qWS8pBK8w";
+
+if (num2==27) twi2link = "https://twi2tter.com/b8ihua/status/1417101296037883907?s=21&t=xNhrkEnOlVAbXG0iNnxwrQ";
+
+if (num2==28) twi2link = "https://twi2tter.com/b8ihua/status/1405508841366720516?s=21&t=rckoqnTbAHUAbEjFXOcPyw";
+
+if (num2==29) twi2link = "追加予定";
+
+if (num2==30) twi2link = "追加予定";
+
+if (num2==31) twi2link = "追加予定";
+
+if (num2==32) twi2link = "https://twi2tter.com"; 
+
+if (num2==33) twi2link = "https://twi2tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A"; 
+
+
+
+document.write(twi2date.link(twi2link)); 
+</script>）
+<br><br>
+<script>
+if (num2==0) sp2 = "追加予定"; 
+if (num2==1) sp2 = "高校に女子更衣室しかないため更衣室に入ったことないから気になるという旨の呟き。行ったことない場所に行ってみると吉";
+if (num2==2) sp2 = "ゴリラの握力は500kgとされており、優しく手コキしないと陰茎は潰れる。例え権力を持っていても謙って接すれば吉に傾く。";
+if (num2==3) sp2 = "節分の日の呟き。巻き寿司を食べると吉。性は急ぐべからず。";
+if (num2==4) sp2 = "初詣に行った際に勃起をしたという旨の呟き。勃起は生命力の象徴であるから吉兆である。出産安し。";
+if (num2==5) sp2 = "初詣に行った際に触れ合ってるところが気持ちよかったという旨の呟き。待ち人はじきに現る。";
+if (num2==6) sp2 = "筋トレするのが吉。待ち人現れ、恋愛は成就する。力斗の様になれたら大吉。";
+if (num2==7) sp2 = "初詣の願い事の際に、神に分かりやすい説明をした呟き。相手と対話する際は相手のことを思い、自分勝手に話さないのがよい。";
+if (num2==8) sp2 = "初詣の際に、電車で寄りかかってきて溶けそうになったという呟き。旅行は安全にうまくいく。";
+if (num2==9) sp2 = "非常によい兆し。何事もうまくいく。嫌いな人のコラ画像を作るといっそう吉。";
+if (num2==10) sp2 = "勉学は奮わない。今日は休んで良い。セフレを作るべし。";
+if (num2==11) sp2 = "オナホがクリスマス前に壊れてしまい、寂しいクリスマスを過ごしたという呟き。大切なものを遺失するかもしれない。ケーキを食べると吉。";
+if (num2==12) sp2 = "勉学は成就する。今まで後回しにしてきた勉強をするとうまくいく。自分で自分の頭を撫でるとよい。";
+if (num2==13) sp2 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。";
+if (num2==14) sp2 = "よい運勢だが、調子に乗ると凶に転落する。欲を出さず慎んで過ごせば良い日になる。また、良い夢が見れる。";
+if (num2==15) sp2 = "右脳は感覚的、左脳は理論的な思考をすると言われている。この乖離が激しいと思考が難しくなる。吉事が舞い込むが、勉学は控えよ。";
+if (num2==16) sp2 = "明日起きたら彩になってないかな や 自分のクローン作って豊胸手術させようかな の様なキモツイをしすぎた日の呟き。今日した悪事は即時ばれる。 ";
+if (num2==17) sp2 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。";
+if (num2==18) sp2 = "オナホを洗った後に置いたままにして親にばれた際の呟き。掃除用具だよと謎の嘘をついた。今日は安静に過ごし勉学に励め";
+if (num2==19) sp2 = "物事を急いては凶。何事も落ち着いて進めると成就するだろう。勉学に励め";
+if (num2==20) sp2 = "勉学に励めば、一つの物事を多角的に見ることができる。一見不要な知識も必ず役に立つだろう。ラッキーアイテムはビックリマンコ";
+if (num2==21) sp2 = "出産は安し。可もなく不可もない日になるだろう。桃を食べると吉。";
+if (num2==22) sp2 = "自動チャージのカードを失った際の呟き。金運は悪い。努力して努力に見合った対価を得るべし。";
+if (num2==23) sp2 = "病災に気を付けよ。しかしすぐ快復する。時を待って安静に過ごすと良い。ラッキーアイテムは尿道。";
+if (num2==24) sp2 = "zenlyで人に見られると嬉しいので射精してしまうという呟き。思わぬ吉報が舞い込むかもしれない。鰐革の財布を持っていると吉。";
+if (num2==25) sp2 = "勉学に励むべき。吉事は一度逃してもまた舞い込むから焦らなくて良い。疲れた時は睡眠を取り快復すれば良い日を送れる。";
+if (num2==26) sp2 = "浅香とお揃いの縫いぐるみに見られながら自慰をすれば、浅香に見られながら自慰をするのと同じである。縫いぐるみに見られながら自慰をすると吉。";
+if (num2==27) sp2 = "現存する中で一番気持ち悪い呟きかもしれない。しかし、今日はこれより不快なことは起こらないため吉である。";
+if (num2==28) sp2 = "凶事が起こり、また助けも乞えない状況になる。しかしそれは自分の隠し事のせいであるので、それを除けば吉に傾く。";
+if (num2==29) sp2 = "追加予定";
+if (num2==30) sp2 = "追加予定";
+if (num2==31) sp2 = "追加予定";
+if (num2==32) sp2 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。"; 
+if (num2==33) sp2 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。"; 
+document.write(sp2); 
+</script>
+<script>
+var num2ber2b = serial2.toString();
+var wsh2num2 = num2ber2b.substr(9,1);
+var mch2num2 = num2ber2b.substr(10,1);
+var use2num2 = num2ber2b.substr(11,1);
+var std2num2 = num2ber2b.substr(12,1);
+var luv2num2 = num2ber2b.substr(13,1);
+var ber2num2 = num2ber2b.substr(14,1);
+var ill2num2 = num2ber2b.substr(15,1);
+</script>
+<br><br>
+<hr color="E45B69" size="0.1px">
+<table width="100%" style="font-size:35px; color:E45B69;">
+<tbody>
+<tr>
+<td><b>願望</b></td>
+<td><b><script>
+if (wsh2num2==1) wsh2 = "待てば成るがほぼ無理";
+if (wsh2num2==2) wsh2 = "すぐに成就するでしょう";
+if (wsh2num2==3) wsh2 = "明日には成る";
+if (wsh2num2==4) wsh2 = "無理である";
+if (wsh2num2==5) wsh2 = "待てば成るでしょう";
+if (wsh2num2==6) wsh2 = "明後日には成る";
+if (wsh2num2==7) wsh2 = "来週まで待て";
+if (wsh2num2==8) wsh2 = "欲張りすぎるな";
+if (wsh2num2==9) wsh2 = "まもなく成る";
+if (wsh2num2==0) wsh2 = "これ以上は望むな"; 
+
+document.write(wsh2); 
+</script></b></td>
+</tr>
+<tr>
+<td><b>待人</b></td>
+<td><b><script>
+if (mch2num2==1) mch2 = "くそぶすが現る";
+if (mch2num2==2) mch2 = "きもい者が来る";
+if (mch2num2==3) mch2 = "遅けれど現る";
+if (mch2num2==4) mch2 = "近くにいる";
+if (mch2num2==5) mch2 = "焦るべからず";
+if (mch2num2==6) mch2 = "来る 心して待て";
+if (mch2num2==7) mch2 = "船木が来る";
+if (mch2num2==8) mch2 = "義輝が来る";
+if (mch2num2==9) mch2 = "元恋人が現る";
+if (mch2num2==0) mch2 = "来る 成就する"; 
+
+document.write(mch2);
+</script></b></td>
+</tr>
+<tr>
+<td><b>失物</b></td>
+<td><b><script>
+if (use2num2==1) use2 = "膣の中にある";
+if (use2num2==2) use2 = "膣の中にある";
+if (use2num2==3) use2 = "膀胱の中にある";
+if (use2num2==4) use2 = "膀胱の中にある";
+if (use2num2==5) use2 = "元恋人の家にある";
+if (use2num2==6) use2 = "寝床の下にある";
+if (use2num2==7) use2 = "学校にある";
+if (use2num2==8) use2 = "船木が持つている";
+if (use2num2==9) use2 = "捨てた";
+if (use2num2==0) use2 = "見つからず"; 
+
+document.write(use2);
+</script></b></td>
+</tr>
+<tr>
+<td><b>学問</b></td>
+<td><b><script>
+if (std2num2==1) std2 = "徹夜してやれ";
+if (std2num2==2) std2 = "苦手な所をやれ";
+if (std2num2==3) std2 = "今日は休んで良い";
+if (std2num2==4) std2 = "壁に当たる";
+if (std2num2==5) std2 = "よく進む";
+if (std2num2==6) std2 = "励みすぎるな";
+if (std2num2==7) std2 = "チンポ学をやれ";
+if (std2num2==8) std2 = "足し算で間違える";
+if (std2num2==9) std2 = "いつもより励め";
+if (std2num2==0) std2 = "壁に当たる"; 
+
+document.write(std2);
+</script></b></td>
+</tr>
+<tr>
+<td><b>恋愛</b></td>
+<td><b><script>
+if (luv2num2==1) luv2 = "じきに成る";
+if (luv2num2==2) luv2 = "愛せ 倖せあり";
+if (luv2num2==3) luv2 = "船木と成る";
+if (luv2num2==4) luv2 = "義輝と成る";
+if (luv2num2==5) luv2 = "隣の席の人と成る";
+if (luv2num2==6) luv2 = "成らない 待て";
+if (luv2num2==7) luv2 = "セフレはできる";
+if (luv2num2==8) luv2 = "ただちに成る";
+if (luv2num2==9) luv2 = "誘えば成る";
+if (luv2num2==0) luv2 = "誘えば成る"; 
+
+document.write(luv2);
+</script></b></td>
+</tr>
+<tr>
+<td><b>出産</b></td>
+<td><b><script>
+if (ber2num2==1) ber2 = "精神を安定すれば安し";
+if (ber2num2==2) ber2 = "待望の暗示";
+if (ber2num2==3) ber2 = "すぐに終る";
+if (ber2num2==4) ber2 = "医者をよく選べ";
+if (ber2num2==5) ber2 = "難産ではない";
+if (ber2num2==6) ber2 = "難産になる";
+if (ber2num2==7) ber2 = "安からず";
+if (ber2num2==8) ber2 = "とても安し";
+if (ber2num2==9) ber2 = "難産になる";
+if (ber2num2==0) ber2 = "落ち着けば安し"; 
+
+document.write(ber2);
+</script></b></b></td>
+</tr>
+<tr>
+<td><b>病気</b></td>
+<td><b><script>
+if (ill2num2==1) ill2 = "日頃を気をつけよ";
+if (ill2num2==2) ill2 = "手をよく洗え";
+if (ill2num2==3) ill2 = "よく寝れば罹らない";
+if (ill2num2==4) ill2 = "気を病む";
+if (ill2num2==5) ill2 = "疲れを取れ";
+if (ill2num2==6) ill2 = "全快早し";
+if (ill2num2==7) ill2 = "性器が大きくなる病に罹る";
+if (ill2num2==8) ill2 = "性病になる";
+if (ill2num2==9) ill2 = "尿が出なくなる";
+if (ill2num2==0) ill2 = "手をよく洗え"; 
+
+document.write(ill2);
+</script></b></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+</font>
+</div>
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
+
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+if ( hr < 25 && hr >= 19 ) mkjurl2 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 19 && hr >= 17 ) mkjurl2 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 17 && hr >= 7 ) mkjurl2 ="https://mikuji.github.io/a/paper.PNG";
+if ( hr < 7 && hr >= 0 ) mkjurl2 ="https://mikuji.github.io/a/papern.PNG";
+
+
+changeP(mkjurl2)
+
+function changeBG(wIMG) {
+document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+function changeP(wIMG2) {
+document.getElementById("mkj2").style.backgroundImage = "url(" + wIMG2 + ")";
+}
+</script> 
+
+  </div>
+  <div class="black-background2" id="js-black-bg2"></div>
+</div>
+<img id="js-show-popup2" src="https://mikuji.github.io/a/mkj2.PNG" width="100%">
+<div style="padding:3px;"></div>
+
+
+
+
+<div class="popup3" id="js-popup3">
+  <div class="popup-inner3">
+
+    <font style="font-size:35px;">
+<center><b><font color="E45B69" style="font-size:38px;">
+<div class="anim-box" style=" padding: 40px; box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); border: 2px solid #dddddd;
+" id="mkj3">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/titp.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
+
+<div id="nowdate3"></div>
+
+<font style="font-size:38px;">
+<script type="text/javascript">
+var year3 = now1.getFullYear();
+var month3 = now1.getMonth()+1;
+var day3 = now1.getDate()-3;
+
+
+
+function toKanzi(num3s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num3s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+
+var wareki3 = year3-2018;
+
+document.querySelector('#nowdate3').innerText ="令和" + toKanzi(wareki3)+"年"+toKanzi(month3)+"月"+toKanzi(day3)+"日";
+
+
+</script>
+
+
+</font>
+<hr color="E45B69" size="0.1px">
+<b><font style="font-size:90px;">
+<script type="text/javascript">
+
+var serial3 = (now.getFullYear()+now.getMonth()+now.getDate()-3)*Math.PI
+
+var num3ber3 = serial3.toString();
+var rand3 = num3ber3.substr(8,2);
+var num3 = Math.floor(rand3 /3);
+
+
+
+if (num3==1) ftn3 = "大吉";
+if (num3==2) ftn3 = "凶";
+if (num3==3) ftn3 = "中吉";
+if (num3==4) ftn3 = "吉";
+if (num3==5) ftn3 = "吉";
+if (num3==6) ftn3 = "小吉";
+if (num3==7) ftn3 = "吉";
+if (num3==8) ftn3 = "中吉";
+if (num3==9) ftn3 = "大吉";
+if (num3==10) ftn3 = "吉";
+if (num3==11) ftn3 = "小吉";
+if (num3==12) ftn3 = "吉";
+if (num3==13) ftn3 = "大凶";
+if (num3==14) ftn3 = "大吉";
+if (num3==15) ftn3 = "中吉";
+if (num3==16) ftn3 = "小吉";
+if (num3==17) ftn3 = "大吉";
+if (num3==18) ftn3 = "凶";
+if (num3==19) ftn3 = "小吉";
+if (num3==20) ftn3 = "小吉";
+if (num3==21) ftn3 = "中吉";
+if (num3==22) ftn3 = "凶";
+if (num3==23) ftn3 = "吉";
+if (num3==24) ftn3 = "大吉";
+if (num3==25) ftn3 = "中吉";
+if (num3==26) ftn3 = "吉";
+if (num3==27) ftn3 = "大吉";
+if (num3==28) ftn3 = "凶";
+if (num3==29) ftn3 = "追加予定";
+if (num3==30) ftn3 = "大凶";
+if (num3==31) ftn3 = "吉";
+if (num3==32) ftn3 = "大凶"; 
+if (num3==33) ftn3 = "大吉"; 
+
+document.write(ftn3); 
+
+</script><br></font><font style="font-size:30px;">
+<div id="view2"></div>
+<script>
+function toKanzi(num3s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num3s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+document.querySelector('#view2').innerText ="第" + toKanzi(num3)+"番";
+</script>
+</font>
+<hr color="E45B69" size="0.1px">
+<font style="font-size:38px;">
+<b>
+<script type="text/javascript">
+
+
+if (num3==0) twi3 = "追加予定"; 
+if (num3==1) twi3 = "これ全く下心ないんだけど女子更衣室の中ってどうなってんの？<br>あと全く下心ないんだけどみんなどんな下着つけてんの？";
+if (num3==2) twi3 = "もう医学部諦めて生物学部行って、ゴリラに手コキ覚えさせて一生遊んで暮らそうかな";
+if (num3==3) twi3 = "彩、南南東の方角向いて恵方巻食べてるなら北北西の方角にちんこ向けてたらフェラしてもらえるってこと？？";
+if (num3==4) twi3 = "勃起はした";
+if (num3==5) twi3 = "触れ合ってるとこから全身まですごい気持ちいんだけど新手のオナニー？";
+if (num3==6) twi3 = "限界童貞だから筋トレする理由はセックス";
+if (num3==7) twi3 = "願い事、「彩と」っていうと神も分からないだろうから「隣にいる子、彩って言うんですけど」から始めた";
+if (num3==8) twi3 = "よりかかってるよりかかってるよりかかってる<br>まじ溶ける死ぬ";
+if (num3==9) twi3 = "【速報】<br>有能わい、彩と初詣の約束をする！！！！！！！！";
+if (num3==10) twi3 = "海人とか中2で梶原にフェラしてもらってたらしいな<br>羨ましすぎる";
+if (num3==11) twi3 = "クリぼっちだしオナホも無い";
+if (num3==12) twi3 = "俺医大受かったら彩に頭撫でてもらいたい";
+if (num3==13) twi3 = "ﾝﾛﾎﾞ（ちんちんをしまう音）";
+if (num3==14) twi3 = "明晰夢で折笠出てきたからおっぱい触ったら金縛りにあった";
+if (num3==15) twi3 = "右脳（パンツ見えそう...）<br>左脳（閉じろよ品無いな）<br>↓<br>右脳左脳が導き出した答え<br>「パンツ見せろよ品無いな」";
+if (num3==16) twi3 = "家に県警が来て俺のキモツイ印刷したやつ突きつけられたら失禁しちゃう";
+if (num3==17) twi3 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告";
+if (num3==18) twi3 = "親にオナホバレて草";
+if (num3==19) twi3 = "「ガシマン」という子供を餓死させてしまう悪い怪人";
+if (num3==20) twi3 = "Sc Ti V Cr Mn を「スコッチ 暴露マン」と覚えてる奴がいるんですよ〜<br>な～〜にぃ〜～!? やっちまったな！！！<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>マンガンをエロい目で見てしまうよ〜";
+if (num3==21) twi3 = "ベッド脇のゴミ箱のティッシュ、桃の香りして草<br>僕の子供、これが由来で桃香になるらしい";
+if (num3==22) twi3 = "わいのヒモカ返してくれや";
+if (num3==23) twi3 = "尿道にカメラをつけて胃カメラとしてフェラチオできればいいのに（ちんこの短歌、ちん歌）";
+if (num3==24) twi3 = "zenly被閲覧数の数だけ射精するワニ";
+if (num3==25) twi3 = "高場「俺は高校生探偵、高場俊輔!! <br>同級生の結丸と自習室に行って・・・<br>めちゃくちゃ疲れてしまった！<br>寝ることに夢中になっていたオレは・・・<br>オナニーをすることができなかった・・・<br>俺はそのまま眠りにつき、目が覚めたら・・・」<br><br>チンコナン「ちんこがド勃起していた!!」<br>";
+if (num3==26) twi3 = "スティッチに見られながらオナニーしよ";
+if (num3==27) twi3 = "ひるまちゃん😃<br>オレの チン毛も、矯正 してほしいです。🍀";
+if (num3==28) twi3 = "ワイ様、鬼久しぶりのゴキブリとの邂逅に発狂し親呼びキンチョールで撃破するも、ベッドの下に入ってしまい、ベッドの下にはおっぱい隠してるため「まぁ...なんとかするわ」となんとか一命を取り留める";
+if (num3==29) twi3 = "追加予定";
+if (num3==30) twi3 = "追加予定";
+if (num3==31) twi3 = "追加予定";
+if (num3==32) twi3 = "ﾝﾛﾎﾞ（ちんちんをしまう音）"; 
+if (num3==33) twi3 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告"; 
+
+document.write(twi3); 
+</script>
+<br>
+<font style="font-size:30px;">
+（日時：<script>
+if (num3==0) twi3date = "追加予定"; 
+if (num3==1) twi3date = "2021年10月12日 14:08:12";
+if (num3==2) twi3date = "2021年03月03日 21:12:57";
+if (num3==3) twi3date = "2021年02月02日 20:08:23";
+if (num3==4) twi3date = "2021年01月03日 20:21:40";
+if (num3==5) twi3date = "2021年01月03日 14:02:41";
+if (num3==6) twi3date = "2021年01月11日 01:27:47";
+if (num3==7) twi3date = "2021年01月03日 23:46:20";
+if (num3==8) twi3date = "2021年01月03日 17:24:55";
+if (num3==9) twi3date = "2021年01月01日 00:18:26";
+if (num3==10) twi3date = "2021年10月18日 06:03:59";
+if (num3==11) twi3date = "2020年12月24日 23:18:49";
+if (num3==12) twi3date = "2020年10月30日 00:27:58";
+if (num3==13) twi3date = "2020年10月03日 23:41:21";
+if (num3==14) twi3date = "2020年09月27日 04:47:36";
+if (num3==15) twi3date = "2020年09月18日 23:39:35";
+if (num3==16) twi3date = "2020年08月10日 00:58:16";
+if (num3==17) twi3date = "2020年08月05日 11:49:34";
+if (num3==18) twi3date = "2020年07月07日 18:22:22";
+if (num3==19) twi3date = "2021年03月04日 00:06:04";
+if (num3==20) twi3date = "2021年03月29日 23:48:52";
+if (num3==21) twi3date = "2021年03月30日 22:26:59";
+if (num3==22) twi3date = "2021年04月05日 16:15:44";
+if (num3==23) twi3date = "2021年04月10日 21:11:32";
+if (num3==24) twi3date = "2021年04月27日 21:54:29";
+if (num3==25) twi3date = "2021年05月16日 08:52:09";
+if (num3==26) twi3date = "2021年05月13日 23:46:20";
+if (num3==27) twi3date = "2021年07月19日 21:37:32";
+if (num3==28) twi3date = "2021年06月17日 21:53:15";
+if (num3==30) twi3date = "追加予定";
+if (num3==31) twi3date = "追加予定";
+if (num3==32) twi3date = "2020年10月03日 23:41:21"; 
+if (num3==33) twi3date = "2020年08月05日 11:49:34"; 
+
+if (num3==0) twi3link = "追加予定"; 
+
+if (num3==1) twi3link = "https://twi3linktter.com/b8ihua/status/1447791189231476756?s=21&t=dFDkD9GoV6sPU4_uSuLn6w";
+
+if (num3==2) twi3link = "https://twi3tter.com/b8ihua/status/1367085586478080000?s=21&t=jm5ri50Y51gEt6k22mPXRg"
+
+if (num3==3) twi3link = "https://twi3tter.com/b8ihua/status/1356560087758766080?s=21&t=c6YtqrQjekywktIJz_if4A";
+
+if (num3==4) twi3link = "https://twi3tter.com/b8ihua/status/1345691796257394689?s=21&t=jd5YmARr6tOV3DZ-RYDhDw";
+
+if (num3==5) twi3link = "https://twi3tter.com/b8ihua/status/1345596421068607489?s=21&t=VEZI-C7fAVOV1yJUpEmGwg";
+
+if (num3==6) twi3link = "https://twi3tter.com/b8ihua/status/1348305547838164999?s=21&t=RcHw4G3whu_Owb1F35NCkw";
+
+if (num3==7) twi3link = "https://twi3tter.com/b8ihua/status/1345743302126026754?s=21&t=qcccuB1p7aU1XTKMT-ew9Q";
+
+if (num3==8) twi3link = "https://twi3tter.com/b8ihua/status/1345647316624031744?s=21&t=yqlt1V7XgQm-M9xgcmZWyQ";
+
+if (num3==9) twi3link = "https://twi3tter.com/b8ihua/status/1344664217018748928?s=21&t=gmOs6fv0sr61bCmDsRhDYg";
+
+if (num3==10) twi3link = "https://twi3tter.com";
+
+if (num3==11) twi3link = "https://twi3tter.com/b8ihua/status/1342112500054073349?s=21&t=ZneDz_Rgm17Hv0gxHjh8Yw";
+
+if (num3==12) twi3link = "https://twi3tter.com/b8ihua/status/1321836178337787905?s=21&t=9vMT2z620wclIC2n8xdWyw";
+
+if (num3==13) twi3link = "https://twi3tter.com";
+
+if (num3==14) twi3link = "https://twi3tter.com/b8ihua/status/1309942719020556288?s=21&t=WwYTNbvAP2_ejdZyrNpgtw";
+
+if (num3==15) twi3link = "https://twi3tter.com/b8ihua/status/1306966101826306048?s=21&t=vGe__itBFcHsnwXNUvm2jQ";
+
+if (num3==16) twi3link = "https://twi3tter.com/b8ihua/status/1292490389979426816?s=21&t=MNvdpCK3LXVvnh4oP9X2RQ";
+
+if (num3==17) twi3link = "https://twi3tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A";
+
+if (num3==18) twi3link = "https://twi3tter.com/b8ihua/status/1280431956715384833?s=21&t=qi4_vqarihervmSXF0wbHw";
+
+if (num3==19) twi3link = "https://twi3tter.com/b8ihua/status/1367129150138376195?s=21&t=FDnBg_Ie2SN8NGhOHcSRLw";
+
+if (num3==20) twi3link = "https://twi3tter.com/b8ihua/status/1376546907942580224?s=21&t=FH3Qphs5wotQh6cUCfTKDg";
+
+if (num3==21) twi3link = "https://twi3tter.com/b8ihua/status/1376888690262204417?s=21&t=Qa2djuDIx1kVZ_fcGgfezg";
+
+if (num3==22) twi3link = "https://twi3tter.com/b8ihua/status/1378969588608552964?s=21&t=YMiLE2pYCs3_qv7-lMloRA";
+
+if (num3==23) twi3link = "https://twi3tter.com/b8ihua/status/1380855968561426436?s=21&t=oRTpJnNPZSQvtZ0NiTEdIw";
+
+if (num3==24) twi3link = "https://twi3tter.com/b8ihua/status/1387027372554088456?s=21&t=1VSqrrgOwvz42QO9S--eBg";
+
+if (num3==25) twi3link = "https://twi3tter.com/b8ihua/status/1393715860041125891?s=21&t=IqAOfwSIBOUy7ZIcLcyLxw";
+
+if (num3==26) twi3link = "https://twi3tter.com/b8ihua/status/1392853723135713287?s=21&t=aPMr7g0ZZzOr1qWS8pBK8w";
+
+if (num3==27) twi3link = "https://twi3tter.com/b8ihua/status/1417101296037883907?s=21&t=xNhrkEnOlVAbXG0iNnxwrQ";
+
+if (num3==28) twi3link = "https://twi3tter.com/b8ihua/status/1405508841366720516?s=21&t=rckoqnTbAHUAbEjFXOcPyw";
+
+if (num3==29) twi3link = "追加予定";
+
+if (num3==30) twi3link = "追加予定";
+
+if (num3==31) twi3link = "追加予定";
+
+if (num3==32) twi3link = "https://twi3tter.com"; 
+
+if (num3==33) twi3link = "https://twi3tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A"; 
+
+
+
+document.write(twi3date.link(twi3link)); 
+</script>）
+<br><br>
+<script>
+if (num3==0) sp3 = "追加予定"; 
+if (num3==1) sp3 = "高校に女子更衣室しかないため更衣室に入ったことないから気になるという旨の呟き。行ったことない場所に行ってみると吉";
+if (num3==2) sp3 = "ゴリラの握力は500kgとされており、優しく手コキしないと陰茎は潰れる。例え権力を持っていても謙って接すれば吉に傾く。";
+if (num3==3) sp3 = "節分の日の呟き。巻き寿司を食べると吉。性は急ぐべからず。";
+if (num3==4) sp3 = "初詣に行った際に勃起をしたという旨の呟き。勃起は生命力の象徴であるから吉兆である。出産安し。";
+if (num3==5) sp3 = "初詣に行った際に触れ合ってるところが気持ちよかったという旨の呟き。待ち人はじきに現る。";
+if (num3==6) sp3 = "筋トレするのが吉。待ち人現れ、恋愛は成就する。力斗の様になれたら大吉。";
+if (num3==7) sp3 = "初詣の願い事の際に、神に分かりやすい説明をした呟き。相手と対話する際は相手のことを思い、自分勝手に話さないのがよい。";
+if (num3==8) sp3 = "初詣の際に、電車で寄りかかってきて溶けそうになったという呟き。旅行は安全にうまくいく。";
+if (num3==9) sp3 = "非常によい兆し。何事もうまくいく。嫌いな人のコラ画像を作るといっそう吉。";
+if (num3==10) sp3 = "勉学は奮わない。今日は休んで良い。セフレを作るべし。";
+if (num3==11) sp3 = "オナホがクリスマス前に壊れてしまい、寂しいクリスマスを過ごしたという呟き。大切なものを遺失するかもしれない。ケーキを食べると吉。";
+if (num3==12) sp3 = "勉学は成就する。今まで後回しにしてきた勉強をするとうまくいく。自分で自分の頭を撫でるとよい。";
+if (num3==13) sp3 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。";
+if (num3==14) sp3 = "よい運勢だが、調子に乗ると凶に転落する。欲を出さず慎んで過ごせば良い日になる。また、良い夢が見れる。";
+if (num3==15) sp3 = "右脳は感覚的、左脳は理論的な思考をすると言われている。この乖離が激しいと思考が難しくなる。吉事が舞い込むが、勉学は控えよ。";
+if (num3==16) sp3 = "明日起きたら彩になってないかな や 自分のクローン作って豊胸手術させようかな の様なキモツイをしすぎた日の呟き。今日した悪事は即時ばれる。 ";
+if (num3==17) sp3 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。";
+if (num3==18) sp3 = "オナホを洗った後に置いたままにして親にばれた際の呟き。掃除用具だよと謎の嘘をついた。今日は安静に過ごし勉学に励め";
+if (num3==19) sp3 = "物事を急いては凶。何事も落ち着いて進めると成就するだろう。勉学に励め";
+if (num3==20) sp3 = "勉学に励めば、一つの物事を多角的に見ることができる。一見不要な知識も必ず役に立つだろう。ラッキーアイテムはビックリマンコ";
+if (num3==21) sp3 = "出産は安し。可もなく不可もない日になるだろう。桃を食べると吉。";
+if (num3==22) sp3 = "自動チャージのカードを失った際の呟き。金運は悪い。努力して努力に見合った対価を得るべし。";
+if (num3==23) sp3 = "病災に気を付けよ。しかしすぐ快復する。時を待って安静に過ごすと良い。ラッキーアイテムは尿道。";
+if (num3==24) sp3 = "zenlyで人に見られると嬉しいので射精してしまうという呟き。思わぬ吉報が舞い込むかもしれない。鰐革の財布を持っていると吉。";
+if (num3==25) sp3 = "勉学に励むべき。吉事は一度逃してもまた舞い込むから焦らなくて良い。疲れた時は睡眠を取り快復すれば良い日を送れる。";
+if (num3==26) sp3 = "浅香とお揃いの縫いぐるみに見られながら自慰をすれば、浅香に見られながら自慰をするのと同じである。縫いぐるみに見られながら自慰をすると吉。";
+if (num3==27) sp3 = "現存する中で一番気持ち悪い呟きかもしれない。しかし、今日はこれより不快なことは起こらないため吉である。";
+if (num3==28) sp3 = "凶事が起こり、また助けも乞えない状況になる。しかしそれは自分の隠し事のせいであるので、それを除けば吉に傾く。";
+if (num3==29) sp3 = "追加予定";
+if (num3==30) sp3 = "追加予定";
+if (num3==31) sp3 = "追加予定";
+if (num3==32) sp3 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。"; 
+if (num3==33) sp3 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。"; 
+document.write(sp3); 
+</script>
+<script>
+var num3ber3b = serial3.toString();
+var wsh3num3 = num3ber3b.substr(9,1);
+var mch3num3 = num3ber3b.substr(10,1);
+var use3num3 = num3ber3b.substr(11,1);
+var std3num3 = num3ber3b.substr(12,1);
+var luv3num3 = num3ber3b.substr(13,1);
+var ber3num3 = num3ber3b.substr(14,1);
+var ill3num3 = num3ber3b.substr(15,1);
+</script>
+<br><br>
+<hr color="E45B69" size="0.1px">
+<table width="100%" style="font-size:35px; color:E45B69;">
+<tbody>
+<tr>
+<td><b>願望</b></td>
+<td><b><script>
+if (wsh3num3==1) wsh3 = "待てば成るがほぼ無理";
+if (wsh3num3==2) wsh3 = "すぐに成就するでしょう";
+if (wsh3num3==3) wsh3 = "明日には成る";
+if (wsh3num3==4) wsh3 = "無理である";
+if (wsh3num3==5) wsh3 = "待てば成るでしょう";
+if (wsh3num3==6) wsh3 = "明後日には成る";
+if (wsh3num3==7) wsh3 = "来週まで待て";
+if (wsh3num3==8) wsh3 = "欲張りすぎるな";
+if (wsh3num3==9) wsh3 = "まもなく成る";
+if (wsh3num3==0) wsh3 = "これ以上は望むな"; 
+
+document.write(wsh3); 
+</script></b></td>
+</tr>
+<tr>
+<td><b>待人</b></td>
+<td><b><script>
+if (mch3num3==1) mch3 = "くそぶすが現る";
+if (mch3num3==2) mch3 = "きもい者が来る";
+if (mch3num3==3) mch3 = "遅けれど現る";
+if (mch3num3==4) mch3 = "近くにいる";
+if (mch3num3==5) mch3 = "焦るべからず";
+if (mch3num3==6) mch3 = "来る 心して待て";
+if (mch3num3==7) mch3 = "船木が来る";
+if (mch3num3==8) mch3 = "義輝が来る";
+if (mch3num3==9) mch3 = "元恋人が現る";
+if (mch3num3==0) mch3 = "来る 成就する"; 
+
+document.write(mch3);
+</script></b></td>
+</tr>
+<tr>
+<td><b>失物</b></td>
+<td><b><script>
+if (use3num3==1) use3 = "膣の中にある";
+if (use3num3==2) use3 = "膣の中にある";
+if (use3num3==3) use3 = "膀胱の中にある";
+if (use3num3==4) use3 = "膀胱の中にある";
+if (use3num3==5) use3 = "元恋人の家にある";
+if (use3num3==6) use3 = "寝床の下にある";
+if (use3num3==7) use3 = "学校にある";
+if (use3num3==8) use3 = "船木が持つている";
+if (use3num3==9) use3 = "捨てた";
+if (use3num3==0) use3 = "見つからず"; 
+
+document.write(use3);
+</script></b></td>
+</tr>
+<tr>
+<td><b>学問</b></td>
+<td><b><script>
+if (std3num3==1) std3 = "徹夜してやれ";
+if (std3num3==2) std3 = "苦手な所をやれ";
+if (std3num3==3) std3 = "今日は休んで良い";
+if (std3num3==4) std3 = "壁に当たる";
+if (std3num3==5) std3 = "よく進む";
+if (std3num3==6) std3 = "励みすぎるな";
+if (std3num3==7) std3 = "チンポ学をやれ";
+if (std3num3==8) std3 = "足し算で間違える";
+if (std3num3==9) std3 = "いつもより励め";
+if (std3num3==0) std3 = "壁に当たる"; 
+
+document.write(std3);
+</script></b></td>
+</tr>
+<tr>
+<td><b>恋愛</b></td>
+<td><b><script>
+if (luv3num3==1) luv3 = "じきに成る";
+if (luv3num3==2) luv3 = "愛せ 倖せあり";
+if (luv3num3==3) luv3 = "船木と成る";
+if (luv3num3==4) luv3 = "義輝と成る";
+if (luv3num3==5) luv3 = "隣の席の人と成る";
+if (luv3num3==6) luv3 = "成らない 待て";
+if (luv3num3==7) luv3 = "セフレはできる";
+if (luv3num3==8) luv3 = "ただちに成る";
+if (luv3num3==9) luv3 = "誘えば成る";
+if (luv3num3==0) luv3 = "誘えば成る"; 
+
+document.write(luv3);
+</script></b></td>
+</tr>
+<tr>
+<td><b>出産</b></td>
+<td><b><script>
+if (ber3num3==1) ber3 = "精神を安定すれば安し";
+if (ber3num3==2) ber3 = "待望の暗示";
+if (ber3num3==3) ber3 = "すぐに終る";
+if (ber3num3==4) ber3 = "医者をよく選べ";
+if (ber3num3==5) ber3 = "難産ではない";
+if (ber3num3==6) ber3 = "難産になる";
+if (ber3num3==7) ber3 = "安からず";
+if (ber3num3==8) ber3 = "とても安し";
+if (ber3num3==9) ber3 = "難産になる";
+if (ber3num3==0) ber3 = "落ち着けば安し"; 
+
+document.write(ber3);
+</script></b></b></td>
+</tr>
+<tr>
+<td><b>病気</b></td>
+<td><b><script>
+if (ill3num3==1) ill3 = "日頃を気をつけよ";
+if (ill3num3==2) ill3 = "手をよく洗え";
+if (ill3num3==3) ill3 = "よく寝れば罹らない";
+if (ill3num3==4) ill3 = "気を病む";
+if (ill3num3==5) ill3 = "疲れを取れ";
+if (ill3num3==6) ill3 = "全快早し";
+if (ill3num3==7) ill3 = "性器が大きくなる病に罹る";
+if (ill3num3==8) ill3 = "性病になる";
+if (ill3num3==9) ill3 = "尿が出なくなる";
+if (ill3num3==0) ill3 = "手をよく洗え"; 
+
+document.write(ill3);
+</script></b></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+</font>
+</div>
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
+
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+if ( hr < 25 && hr >= 19 ) mkjurl3 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 19 && hr >= 17 ) mkjurl3 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 17 && hr >= 7 ) mkjurl3 ="https://mikuji.github.io/a/paper.PNG";
+if ( hr < 7 && hr >= 0 ) mkjurl3 ="https://mikuji.github.io/a/papern.PNG";
+
+
+changeP(mkjurl3)
+
+function changeBG(wIMG) {
+document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+function changeP(wIMG2) {
+document.getElementById("mkj3").style.backgroundImage = "url(" + wIMG2 + ")";
+}
+</script> 
+
+  </div>
+  <div class="black-background3" id="js-black-bg3"></div>
+</div>
+<img id="js-show-popup3" src="https://mikuji.github.io/a/mkj3.PNG" width="100%">
+<div style="padding:3px;"></div>
+
+
+<div class="popup4" id="js-popup4">
+  <div class="popup-inner4">
+
+    <font style="font-size:35px;">
+<center><b><font color="E45B69" style="font-size:38px;">
+<div class="anim-box" style=" padding: 40px; box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.7); border: 2px solid #dddddd;
+" id="mkj4">
+<div style="border: 2px double #E45B69; padding:0px;">
+<img src="https://mikuji.github.io/a/titp.PNG" width="100%">
+</div>
+<div style="padding:6px;"></div>
+<div style="border: 2px double #E45B69; padding:20px 30px 30px 30px;">
+
+<div id="nowdate4"></div>
+
+<font style="font-size:38px;">
+<script type="text/javascript">
+var year4 = now1.getFullYear();
+var month4 = now1.getMonth()+1;
+var day4 = now1.getDate()-4;
+
+
+
+function toKanzi(num4s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num4s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+
+var wareki4 = year4-2018;
+
+document.querySelector('#nowdate4').innerText ="令和" + toKanzi(wareki4)+"年"+toKanzi(month4)+"月"+toKanzi(day4)+"日";
+
+
+</script>
+
+
+</font>
+<hr color="E45B69" size="0.1px">
+<b><font style="font-size:90px;">
+<script type="text/javascript">
+
+var serial4 = (now.getFullYear()+now.getMonth()+now.getDate()-4)*Math.PI
+
+var num4ber4 = serial4.toString();
+var rand4 = num4ber4.substr(8,2);
+var num4 = Math.floor(rand4 /3);
+
+
+
+if (num4==1) ftn4 = "大吉";
+if (num4==2) ftn4 = "凶";
+if (num4==3) ftn4 = "中吉";
+if (num4==4) ftn4 = "吉";
+if (num4==5) ftn4 = "吉";
+if (num4==6) ftn4 = "小吉";
+if (num4==7) ftn4 = "吉";
+if (num4==8) ftn4 = "中吉";
+if (num4==9) ftn4 = "大吉";
+if (num4==10) ftn4 = "吉";
+if (num4==11) ftn4 = "小吉";
+if (num4==12) ftn4 = "吉";
+if (num4==13) ftn4 = "大凶";
+if (num4==14) ftn4 = "大吉";
+if (num4==15) ftn4 = "中吉";
+if (num4==16) ftn4 = "小吉";
+if (num4==17) ftn4 = "大吉";
+if (num4==18) ftn4 = "凶";
+if (num4==19) ftn4 = "小吉";
+if (num4==20) ftn4 = "小吉";
+if (num4==21) ftn4 = "中吉";
+if (num4==22) ftn4 = "凶";
+if (num4==23) ftn4 = "吉";
+if (num4==24) ftn4 = "大吉";
+if (num4==25) ftn4 = "中吉";
+if (num4==26) ftn4 = "吉";
+if (num4==27) ftn4 = "大吉";
+if (num4==28) ftn4 = "凶";
+if (num4==29) ftn4 = "追加予定";
+if (num4==30) ftn4 = "大凶";
+if (num4==31) ftn4 = "吉";
+if (num4==32) ftn4 = "大凶"; 
+if (num4==33) ftn4 = "大吉"; 
+
+document.write(ftn4); 
+
+</script><br></font><font style="font-size:30px;">
+<div id="view2"></div>
+<script>
+function toKanzi(num4s){
+var txt = new Array("〇","一","二","三","四","五","六","七","八","九");
+let befText = num4s.toString();
+let str = "";
+for(var i=0; i<befText.length; i++) str += txt[befText.charAt(i)];
+return str;
+};
+document.querySelector('#view2').innerText ="第" + toKanzi(num4)+"番";
+</script>
+</font>
+<hr color="E45B69" size="0.1px">
+<font style="font-size:38px;">
+<b>
+<script type="text/javascript">
+
+
+if (num4==0) twi4 = "追加予定"; 
+if (num4==1) twi4 = "これ全く下心ないんだけど女子更衣室の中ってどうなってんの？<br>あと全く下心ないんだけどみんなどんな下着つけてんの？";
+if (num4==2) twi4 = "もう医学部諦めて生物学部行って、ゴリラに手コキ覚えさせて一生遊んで暮らそうかな";
+if (num4==3) twi4 = "彩、南南東の方角向いて恵方巻食べてるなら北北西の方角にちんこ向けてたらフェラしてもらえるってこと？？";
+if (num4==4) twi4 = "勃起はした";
+if (num4==5) twi4 = "触れ合ってるとこから全身まですごい気持ちいんだけど新手のオナニー？";
+if (num4==6) twi4 = "限界童貞だから筋トレする理由はセックス";
+if (num4==7) twi4 = "願い事、「彩と」っていうと神も分からないだろうから「隣にいる子、彩って言うんですけど」から始めた";
+if (num4==8) twi4 = "よりかかってるよりかかってるよりかかってる<br>まじ溶ける死ぬ";
+if (num4==9) twi4 = "【速報】<br>有能わい、彩と初詣の約束をする！！！！！！！！";
+if (num4==10) twi4 = "海人とか中2で梶原にフェラしてもらってたらしいな<br>羨ましすぎる";
+if (num4==11) twi4 = "クリぼっちだしオナホも無い";
+if (num4==12) twi4 = "俺医大受かったら彩に頭撫でてもらいたい";
+if (num4==13) twi4 = "ﾝﾛﾎﾞ（ちんちんをしまう音）";
+if (num4==14) twi4 = "明晰夢で折笠出てきたからおっぱい触ったら金縛りにあった";
+if (num4==15) twi4 = "右脳（パンツ見えそう...）<br>左脳（閉じろよ品無いな）<br>↓<br>右脳左脳が導き出した答え<br>「パンツ見せろよ品無いな」";
+if (num4==16) twi4 = "家に県警が来て俺のキモツイ印刷したやつ突きつけられたら失禁しちゃう";
+if (num4==17) twi4 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告";
+if (num4==18) twi4 = "親にオナホバレて草";
+if (num4==19) twi4 = "「ガシマン」という子供を餓死させてしまう悪い怪人";
+if (num4==20) twi4 = "Sc Ti V Cr Mn を「スコッチ 暴露マン」と覚えてる奴がいるんですよ〜<br>な～〜にぃ〜～!? やっちまったな！！！<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>男は黙って<br>「スカトロチンコビックリマンコ！！」<br>マンガンをエロい目で見てしまうよ〜";
+if (num4==21) twi4 = "ベッド脇のゴミ箱のティッシュ、桃の香りして草<br>僕の子供、これが由来で桃香になるらしい";
+if (num4==22) twi4 = "わいのヒモカ返してくれや";
+if (num4==23) twi4 = "尿道にカメラをつけて胃カメラとしてフェラチオできればいいのに（ちんこの短歌、ちん歌）";
+if (num4==24) twi4 = "zenly被閲覧数の数だけ射精するワニ";
+if (num4==25) twi4 = "高場「俺は高校生探偵、高場俊輔!! <br>同級生の結丸と自習室に行って・・・<br>めちゃくちゃ疲れてしまった！<br>寝ることに夢中になっていたオレは・・・<br>オナニーをすることができなかった・・・<br>俺はそのまま眠りにつき、目が覚めたら・・・」<br><br>チンコナン「ちんこがド勃起していた!!」<br>";
+if (num4==26) twi4 = "スティッチに見られながらオナニーしよ";
+if (num4==27) twi4 = "ひるまちゃん😃<br>オレの チン毛も、矯正 してほしいです。🍀";
+if (num4==28) twi4 = "ワイ様、鬼久しぶりのゴキブリとの邂逅に発狂し親呼びキンチョールで撃破するも、ベッドの下に入ってしまい、ベッドの下にはおっぱい隠してるため「まぁ...なんとかするわ」となんとか一命を取り留める";
+if (num4==29) twi4 = "追加予定";
+if (num4==30) twi4 = "追加予定";
+if (num4==31) twi4 = "追加予定";
+if (num4==32) twi4 = "ﾝﾛﾎﾞ（ちんちんをしまう音）"; 
+if (num4==33) twi4 = "彩 と 混 浴 す る 夢 見 て 人 生 勝 ち 組 し ま し た<br>乳輪は大きかったです（クソ報告"; 
+
+document.write(twi4); 
+</script>
+<br>
+<font style="font-size:30px;">
+（日時：<script>
+if (num4==0) twi4date = "追加予定"; 
+if (num4==1) twi4date = "2021年10月12日 14:08:12";
+if (num4==2) twi4date = "2021年03月03日 21:12:57";
+if (num4==3) twi4date = "2021年02月02日 20:08:23";
+if (num4==4) twi4date = "2021年01月03日 20:21:40";
+if (num4==5) twi4date = "2021年01月03日 14:02:41";
+if (num4==6) twi4date = "2021年01月11日 01:27:47";
+if (num4==7) twi4date = "2021年01月03日 23:46:20";
+if (num4==8) twi4date = "2021年01月03日 17:24:55";
+if (num4==9) twi4date = "2021年01月01日 00:18:26";
+if (num4==10) twi4date = "2021年10月18日 06:03:59";
+if (num4==11) twi4date = "2020年12月24日 23:18:49";
+if (num4==12) twi4date = "2020年10月30日 00:27:58";
+if (num4==13) twi4date = "2020年10月03日 23:41:21";
+if (num4==14) twi4date = "2020年09月27日 04:47:36";
+if (num4==15) twi4date = "2020年09月18日 23:39:35";
+if (num4==16) twi4date = "2020年08月10日 00:58:16";
+if (num4==17) twi4date = "2020年08月05日 11:49:34";
+if (num4==18) twi4date = "2020年07月07日 18:22:22";
+if (num4==19) twi4date = "2021年03月04日 00:06:04";
+if (num4==20) twi4date = "2021年03月29日 23:48:52";
+if (num4==21) twi4date = "2021年03月30日 22:26:59";
+if (num4==22) twi4date = "2021年04月05日 16:15:44";
+if (num4==23) twi4date = "2021年04月10日 21:11:32";
+if (num4==24) twi4date = "2021年04月27日 21:54:29";
+if (num4==25) twi4date = "2021年05月16日 08:52:09";
+if (num4==26) twi4date = "2021年05月13日 23:46:20";
+if (num4==27) twi4date = "2021年07月19日 21:37:32";
+if (num4==28) twi4date = "2021年06月17日 21:53:15";
+if (num4==30) twi4date = "追加予定";
+if (num4==31) twi4date = "追加予定";
+if (num4==32) twi4date = "2020年10月03日 23:41:21"; 
+if (num4==33) twi4date = "2020年08月05日 11:49:34"; 
+
+if (num4==0) twi4link = "追加予定"; 
+
+if (num4==1) twi4link = "https://twi4linktter.com/b8ihua/status/1447791189231476756?s=21&t=dFDkD9GoV6sPU4_uSuLn6w";
+
+if (num4==2) twi4link = "https://twi4tter.com/b8ihua/status/1367085586478080000?s=21&t=jm5ri50Y51gEt6k22mPXRg"
+
+if (num4==3) twi4link = "https://twi4tter.com/b8ihua/status/1356560087758766080?s=21&t=c6YtqrQjekywktIJz_if4A";
+
+if (num4==4) twi4link = "https://twi4tter.com/b8ihua/status/1345691796257394689?s=21&t=jd5YmARr6tOV3DZ-RYDhDw";
+
+if (num4==5) twi4link = "https://twi4tter.com/b8ihua/status/1345596421068607489?s=21&t=VEZI-C7fAVOV1yJUpEmGwg";
+
+if (num4==6) twi4link = "https://twi4tter.com/b8ihua/status/1348305547838164999?s=21&t=RcHw4G3whu_Owb1F35NCkw";
+
+if (num4==7) twi4link = "https://twi4tter.com/b8ihua/status/1345743302126026754?s=21&t=qcccuB1p7aU1XTKMT-ew9Q";
+
+if (num4==8) twi4link = "https://twi4tter.com/b8ihua/status/1345647316624031744?s=21&t=yqlt1V7XgQm-M9xgcmZWyQ";
+
+if (num4==9) twi4link = "https://twi4tter.com/b8ihua/status/1344664217018748928?s=21&t=gmOs6fv0sr61bCmDsRhDYg";
+
+if (num4==10) twi4link = "https://twi4tter.com";
+
+if (num4==11) twi4link = "https://twi4tter.com/b8ihua/status/1342112500054073349?s=21&t=ZneDz_Rgm17Hv0gxHjh8Yw";
+
+if (num4==12) twi4link = "https://twi4tter.com/b8ihua/status/1321836178337787905?s=21&t=9vMT2z620wclIC2n8xdWyw";
+
+if (num4==13) twi4link = "https://twi4tter.com";
+
+if (num4==14) twi4link = "https://twi4tter.com/b8ihua/status/1309942719020556288?s=21&t=WwYTNbvAP2_ejdZyrNpgtw";
+
+if (num4==15) twi4link = "https://twi4tter.com/b8ihua/status/1306966101826306048?s=21&t=vGe__itBFcHsnwXNUvm2jQ";
+
+if (num4==16) twi4link = "https://twi4tter.com/b8ihua/status/1292490389979426816?s=21&t=MNvdpCK3LXVvnh4oP9X2RQ";
+
+if (num4==17) twi4link = "https://twi4tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A";
+
+if (num4==18) twi4link = "https://twi4tter.com/b8ihua/status/1280431956715384833?s=21&t=qi4_vqarihervmSXF0wbHw";
+
+if (num4==19) twi4link = "https://twi4tter.com/b8ihua/status/1367129150138376195?s=21&t=FDnBg_Ie2SN8NGhOHcSRLw";
+
+if (num4==20) twi4link = "https://twi4tter.com/b8ihua/status/1376546907942580224?s=21&t=FH3Qphs5wotQh6cUCfTKDg";
+
+if (num4==21) twi4link = "https://twi4tter.com/b8ihua/status/1376888690262204417?s=21&t=Qa2djuDIx1kVZ_fcGgfezg";
+
+if (num4==22) twi4link = "https://twi4tter.com/b8ihua/status/1378969588608552964?s=21&t=YMiLE2pYCs3_qv7-lMloRA";
+
+if (num4==23) twi4link = "https://twi4tter.com/b8ihua/status/1380855968561426436?s=21&t=oRTpJnNPZSQvtZ0NiTEdIw";
+
+if (num4==24) twi4link = "https://twi4tter.com/b8ihua/status/1387027372554088456?s=21&t=1VSqrrgOwvz42QO9S--eBg";
+
+if (num4==25) twi4link = "https://twi4tter.com/b8ihua/status/1393715860041125891?s=21&t=IqAOfwSIBOUy7ZIcLcyLxw";
+
+if (num4==26) twi4link = "https://twi4tter.com/b8ihua/status/1392853723135713287?s=21&t=aPMr7g0ZZzOr1qWS8pBK8w";
+
+if (num4==27) twi4link = "https://twi4tter.com/b8ihua/status/1417101296037883907?s=21&t=xNhrkEnOlVAbXG0iNnxwrQ";
+
+if (num4==28) twi4link = "https://twi4tter.com/b8ihua/status/1405508841366720516?s=21&t=rckoqnTbAHUAbEjFXOcPyw";
+
+if (num4==29) twi4link = "追加予定";
+
+if (num4==30) twi4link = "追加予定";
+
+if (num4==31) twi4link = "追加予定";
+
+if (num4==32) twi4link = "https://twi4tter.com"; 
+
+if (num4==33) twi4link = "https://twi4tter.com/b8ihua/status/1290836759220084737?s=21&t=ynHkVeRjH5IxDROCccFt1A"; 
+
+
+
+document.write(twi4date.link(twi4link)); 
+</script>）
+<br><br>
+<script>
+if (num4==0) sp4 = "追加予定"; 
+if (num4==1) sp4 = "高校に女子更衣室しかないため更衣室に入ったことないから気になるという旨の呟き。行ったことない場所に行ってみると吉";
+if (num4==2) sp4 = "ゴリラの握力は500kgとされており、優しく手コキしないと陰茎は潰れる。例え権力を持っていても謙って接すれば吉に傾く。";
+if (num4==3) sp4 = "節分の日の呟き。巻き寿司を食べると吉。性は急ぐべからず。";
+if (num4==4) sp4 = "初詣に行った際に勃起をしたという旨の呟き。勃起は生命力の象徴であるから吉兆である。出産安し。";
+if (num4==5) sp4 = "初詣に行った際に触れ合ってるところが気持ちよかったという旨の呟き。待ち人はじきに現る。";
+if (num4==6) sp4 = "筋トレするのが吉。待ち人現れ、恋愛は成就する。力斗の様になれたら大吉。";
+if (num4==7) sp4 = "初詣の願い事の際に、神に分かりやすい説明をした呟き。相手と対話する際は相手のことを思い、自分勝手に話さないのがよい。";
+if (num4==8) sp4 = "初詣の際に、電車で寄りかかってきて溶けそうになったという呟き。旅行は安全にうまくいく。";
+if (num4==9) sp4 = "非常によい兆し。何事もうまくいく。嫌いな人のコラ画像を作るといっそう吉。";
+if (num4==10) sp4 = "勉学は奮わない。今日は休んで良い。セフレを作るべし。";
+if (num4==11) sp4 = "オナホがクリスマス前に壊れてしまい、寂しいクリスマスを過ごしたという呟き。大切なものを遺失するかもしれない。ケーキを食べると吉。";
+if (num4==12) sp4 = "勉学は成就する。今まで後回しにしてきた勉強をするとうまくいく。自分で自分の頭を撫でるとよい。";
+if (num4==13) sp4 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。";
+if (num4==14) sp4 = "よい運勢だが、調子に乗ると凶に転落する。欲を出さず慎んで過ごせば良い日になる。また、良い夢が見れる。";
+if (num4==15) sp4 = "右脳は感覚的、左脳は理論的な思考をすると言われている。この乖離が激しいと思考が難しくなる。吉事が舞い込むが、勉学は控えよ。";
+if (num4==16) sp4 = "明日起きたら彩になってないかな や 自分のクローン作って豊胸手術させようかな の様なキモツイをしすぎた日の呟き。今日した悪事は即時ばれる。 ";
+if (num4==17) sp4 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。";
+if (num4==18) sp4 = "オナホを洗った後に置いたままにして親にばれた際の呟き。掃除用具だよと謎の嘘をついた。今日は安静に過ごし勉学に励め";
+if (num4==19) sp4 = "物事を急いては凶。何事も落ち着いて進めると成就するだろう。勉学に励め";
+if (num4==20) sp4 = "勉学に励めば、一つの物事を多角的に見ることができる。一見不要な知識も必ず役に立つだろう。ラッキーアイテムはビックリマンコ";
+if (num4==21) sp4 = "出産は安し。可もなく不可もない日になるだろう。桃を食べると吉。";
+if (num4==22) sp4 = "自動チャージのカードを失った際の呟き。金運は悪い。努力して努力に見合った対価を得るべし。";
+if (num4==23) sp4 = "病災に気を付けよ。しかしすぐ快復する。時を待って安静に過ごすと良い。ラッキーアイテムは尿道。";
+if (num4==24) sp4 = "zenlyで人に見られると嬉しいので射精してしまうという呟き。思わぬ吉報が舞い込むかもしれない。鰐革の財布を持っていると吉。";
+if (num4==25) sp4 = "勉学に励むべき。吉事は一度逃してもまた舞い込むから焦らなくて良い。疲れた時は睡眠を取り快復すれば良い日を送れる。";
+if (num4==26) sp4 = "浅香とお揃いの縫いぐるみに見られながら自慰をすれば、浅香に見られながら自慰をするのと同じである。縫いぐるみに見られながら自慰をすると吉。";
+if (num4==27) sp4 = "現存する中で一番気持ち悪い呟きかもしれない。しかし、今日はこれより不快なことは起こらないため吉である。";
+if (num4==28) sp4 = "凶事が起こり、また助けも乞えない状況になる。しかしそれは自分の隠し事のせいであるので、それを除けば吉に傾く。";
+if (num4==29) sp4 = "追加予定";
+if (num4==30) sp4 = "追加予定";
+if (num4==31) sp4 = "追加予定";
+if (num4==32) sp4 = "乳首の絵を描いて欲しいと懇願したが叶わず、陰茎をしまったときの音。性はうまくいかない。あまり良い日ではないが、乳首の絵を書くと吉事あり。"; 
+if (num4==33) sp4 = "良い兆しである。何事もうまくいき、吉夢が見れる。恋愛も成就するだろう。"; 
+document.write(sp4); 
+</script>
+<script>
+var num4ber4b = serial4.toString();
+var wsh4num4 = num4ber4b.substr(9,1);
+var mch4num4 = num4ber4b.substr(10,1);
+var use4num4 = num4ber4b.substr(11,1);
+var std4num4 = num4ber4b.substr(12,1);
+var luv4num4 = num4ber4b.substr(13,1);
+var ber4num4 = num4ber4b.substr(14,1);
+var ill4num4 = num4ber4b.substr(15,1);
+</script>
+<br><br>
+<hr color="E45B69" size="0.1px">
+<table width="100%" style="font-size:35px; color:E45B69;">
+<tbody>
+<tr>
+<td><b>願望</b></td>
+<td><b><script>
+if (wsh4num4==1) wsh4 = "待てば成るがほぼ無理";
+if (wsh4num4==2) wsh4 = "すぐに成就するでしょう";
+if (wsh4num4==3) wsh4 = "明日には成る";
+if (wsh4num4==4) wsh4 = "無理である";
+if (wsh4num4==5) wsh4 = "待てば成るでしょう";
+if (wsh4num4==6) wsh4 = "明後日には成る";
+if (wsh4num4==7) wsh4 = "来週まで待て";
+if (wsh4num4==8) wsh4 = "欲張りすぎるな";
+if (wsh4num4==9) wsh4 = "まもなく成る";
+if (wsh4num4==0) wsh4 = "これ以上は望むな"; 
+
+document.write(wsh4); 
+</script></b></td>
+</tr>
+<tr>
+<td><b>待人</b></td>
+<td><b><script>
+if (mch4num4==1) mch4 = "くそぶすが現る";
+if (mch4num4==2) mch4 = "きもい者が来る";
+if (mch4num4==3) mch4 = "遅けれど現る";
+if (mch4num4==4) mch4 = "近くにいる";
+if (mch4num4==5) mch4 = "焦るべからず";
+if (mch4num4==6) mch4 = "来る 心して待て";
+if (mch4num4==7) mch4 = "船木が来る";
+if (mch4num4==8) mch4 = "義輝が来る";
+if (mch4num4==9) mch4 = "元恋人が現る";
+if (mch4num4==0) mch4 = "来る 成就する"; 
+
+document.write(mch4);
+</script></b></td>
+</tr>
+<tr>
+<td><b>失物</b></td>
+<td><b><script>
+if (use4num4==1) use4 = "膣の中にある";
+if (use4num4==2) use4 = "膣の中にある";
+if (use4num4==3) use4 = "膀胱の中にある";
+if (use4num4==4) use4 = "膀胱の中にある";
+if (use4num4==5) use4 = "元恋人の家にある";
+if (use4num4==6) use4 = "寝床の下にある";
+if (use4num4==7) use4 = "学校にある";
+if (use4num4==8) use4 = "船木が持つている";
+if (use4num4==9) use4 = "捨てた";
+if (use4num4==0) use4 = "見つからず"; 
+
+document.write(use4);
+</script></b></td>
+</tr>
+<tr>
+<td><b>学問</b></td>
+<td><b><script>
+if (std4num4==1) std4 = "徹夜してやれ";
+if (std4num4==2) std4 = "苦手な所をやれ";
+if (std4num4==3) std4 = "今日は休んで良い";
+if (std4num4==4) std4 = "壁に当たる";
+if (std4num4==5) std4 = "よく進む";
+if (std4num4==6) std4 = "励みすぎるな";
+if (std4num4==7) std4 = "チンポ学をやれ";
+if (std4num4==8) std4 = "足し算で間違える";
+if (std4num4==9) std4 = "いつもより励め";
+if (std4num4==0) std4 = "壁に当たる"; 
+
+document.write(std4);
+</script></b></td>
+</tr>
+<tr>
+<td><b>恋愛</b></td>
+<td><b><script>
+if (luv4num4==1) luv4 = "じきに成る";
+if (luv4num4==2) luv4 = "愛せ 倖せあり";
+if (luv4num4==3) luv4 = "船木と成る";
+if (luv4num4==4) luv4 = "義輝と成る";
+if (luv4num4==5) luv4 = "隣の席の人と成る";
+if (luv4num4==6) luv4 = "成らない 待て";
+if (luv4num4==7) luv4 = "セフレはできる";
+if (luv4num4==8) luv4 = "ただちに成る";
+if (luv4num4==9) luv4 = "誘えば成る";
+if (luv4num4==0) luv4 = "誘えば成る"; 
+
+document.write(luv4);
+</script></b></td>
+</tr>
+<tr>
+<td><b>出産</b></td>
+<td><b><script>
+if (ber4num4==1) ber4 = "精神を安定すれば安し";
+if (ber4num4==2) ber4 = "待望の暗示";
+if (ber4num4==3) ber4 = "すぐに終る";
+if (ber4num4==4) ber4 = "医者をよく選べ";
+if (ber4num4==5) ber4 = "難産ではない";
+if (ber4num4==6) ber4 = "難産になる";
+if (ber4num4==7) ber4 = "安からず";
+if (ber4num4==8) ber4 = "とても安し";
+if (ber4num4==9) ber4 = "難産になる";
+if (ber4num4==0) ber4 = "落ち着けば安し"; 
+
+document.write(ber4);
+</script></b></b></td>
+</tr>
+<tr>
+<td><b>病気</b></td>
+<td><b><script>
+if (ill4num4==1) ill4 = "日頃を気をつけよ";
+if (ill4num4==2) ill4 = "手をよく洗え";
+if (ill4num4==3) ill4 = "よく寝れば罹らない";
+if (ill4num4==4) ill4 = "気を病む";
+if (ill4num4==5) ill4 = "疲れを取れ";
+if (ill4num4==6) ill4 = "全快早し";
+if (ill4num4==7) ill4 = "性器が大きくなる病に罹る";
+if (ill4num4==8) ill4 = "性病になる";
+if (ill4num4==9) ill4 = "尿が出なくなる";
+if (ill4num4==0) ill4 = "手をよく洗え"; 
+
+document.write(ill4);
+</script></b></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+</font>
+</div>
+<script type="text/javascript">
+var bgdate = new Date();
+var hr = bgdate.getHours();
+
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
+if ( hr < 25 && hr >= 19 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 19 && hr >= 17 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
+if ( hr < 17 && hr >= 7 ) mkjurl4 ="https://mikuji.github.io/a/paper.PNG";
+if ( hr < 7 && hr >= 0 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
+
+
+changeP(mkjurl4)
+
+function changeBG(wIMG) {
+document.body.style.backgroundImage = "url(" + wIMG + ")";
+}
+function changeP(wIMG2) {
+document.getElementById("mkj4").style.backgroundImage = "url(" + wIMG2 + ")";
+}
+</script> 
+
+
+
+  </div>
+  <div class="black-background4" id="js-black-bg4"></div>
+</div>
+<img id="js-show-popup4" src="https://mikuji.github.io/a/mkj4.PNG" width="100%">
+<div style="padding:3px;"></div>
+
+
+<style>
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 68%;
+  
+ 
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+</style>
+<script>
+function popupImage() {
+  var popup = document.getElementById('js-popup');
+  if(!popup) return;
+
+  var blackBg = document.getElementById('js-black-bg');
+  var closeBtn = document.getElementById('js-close-btn');
+  var showBtn = document.getElementById('js-show-popup');
+
+  closePopUp(blackBg);
+  closePopUp(closeBtn);
+  closePopUp(showBtn);
+  function closePopUp(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup.classList.toggle('is-show');
+    });
+  }
+}
+popupImage();
+</script>
+
+<style>
+.btn2{
+margin-right: 20px;
+  margin-left: auto;
+    display: block;
+    width: 250px;
+    /*コレ*/background: transparent;
+    border: 2px solid #FFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 120%;
+    font-weight: bold;
+}
+.popup2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup2.is-show2 {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 68%;
+  
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner2 img {
+  width: 100%;
+}
+.close-btn2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn2 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+</style>
+<script>
+function popupImage2() {
+  var popup2 = document.getElementById('js-popup2');
+  if(!popup2) return;
+
+  var blackBg2 = document.getElementById('js-black-bg2');
+  var closeBtn2 = document.getElementById('js-close-btn2');
+  var showBtn2 = document.getElementById('js-show-popup2');
+
+  closePopUp2(blackBg2);
+  closePopUp2(closeBtn2);
+  closePopUp2(showBtn2);
+  function closePopUp2(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup2.classList.toggle('is-show2');
+    });
+  }
+}
+popupImage2();
+</script>
+
+
+<style>
+.btn3{
+margin-right: 20px;
+  margin-left: auto;
+    display: block;
+    width: 250px;
+    /*コレ*/background: transparent;
+    border: 2px solid #FFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 120%;
+    font-weight: bold;
+}
+.popup3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup3.is-show3 {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 68%;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner3 img {
+  width: 100%;
+}
+.close-btn3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn3 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+</style>
+<script>
+function popupImage3() {
+  var popup3= document.getElementById('js-popup3');
+  if(!popup3) return;
+
+  var blackBg3 = document.getElementById('js-black-bg3');
+  var closeBtn3 = document.getElementById('js-close-btn3');
+  var showBtn3 = document.getElementById('js-show-popup3');
+
+  closePopUp3(blackBg3);
+  closePopUp3(closeBtn3);
+  closePopUp3(showBtn3);
+  function closePopUp3(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup3.classList.toggle('is-show3');
+    });
+  }
+}
+popupImage3();
+</script>
+
+
+<style>
+.btn4{
+margin-right: 20px;
+  margin-left: auto;
+    display: block;
+    width: 250px;
+    /*コレ*/background: transparent;
+    border: 2px solid #FFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 120%;
+    font-weight: bold;
+}
+.popup4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup4.is-show4 {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 68%;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner4 img {
+  width: 100%;
+}
+.close-btn4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn4 i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+</style>
+<script>
+function popupImage4() {
+  var popup4= document.getElementById('js-popup4');
+  if(!popup4) return;
+
+  var blackBg4 = document.getElementById('js-black-bg4');
+  var closeBtn4 = document.getElementById('js-close-btn4');
+  var showBtn4 = document.getElementById('js-show-popup4');
+
+  closePopUp4(blackBg4);
+  closePopUp4(closeBtn4);
+  closePopUp4(showBtn4);
+  function closePopUp4(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup4.classList.toggle('is-show4');
+    });
+  }
+}
+popupImage4();
+</script>
+
+
+
+
+
+
 <br><br><br><br><br>
 <div style="padding:40px;">
 <font color="#ffffff" style="font-size:38px; opacity:0.8;">
