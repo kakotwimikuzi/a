@@ -1,6 +1,6 @@
 <title>過去ツイ御籤 | 御籤掛け</title>
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-<body style=" background-image: url(https://mikuji.github.io/a/mkjbg.PNG); background-size: cover;">
+<body style=" background-size: cover;">
 <br><br>
 <button onclick="location.href='https://mikuji.github.io/a/'" class="btn">
 <font style="font-size:30px;">◀︎ 戻る</font></button>
@@ -464,10 +464,7 @@ document.write(ill);
 var bgdate = new Date();
 var hr = bgdate.getHours();
 
-if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
-if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
-if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
-if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
 
 if ( hr < 25 && hr >= 19 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
 if ( hr < 19 && hr >= 17 ) mkjurl ="https://mikuji.github.io/a/papern.PNG";
@@ -932,10 +929,7 @@ document.write(ill2);
 var bgdate = new Date();
 var hr = bgdate.getHours();
 
-if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
-if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
-if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
-if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
 
 if ( hr < 25 && hr >= 19 ) mkjurl2 ="https://mikuji.github.io/a/papern.PNG";
 if ( hr < 19 && hr >= 17 ) mkjurl2 ="https://mikuji.github.io/a/papern.PNG";
@@ -1398,10 +1392,7 @@ document.write(ill3);
 var bgdate = new Date();
 var hr = bgdate.getHours();
 
-if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
-if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
-if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
-if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+
 
 if ( hr < 25 && hr >= 19 ) mkjurl3 ="https://mikuji.github.io/a/papern.PNG";
 if ( hr < 19 && hr >= 17 ) mkjurl3 ="https://mikuji.github.io/a/papern.PNG";
@@ -1862,17 +1853,18 @@ document.write(ill4);
 var bgdate = new Date();
 var hr = bgdate.getHours();
 
-if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
-if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/bge.jpg";
-if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/bgm.jpg";
-if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/bgn.PNG";
+if ( hr < 25 && hr >= 19 ) bgurl ="https://mikuji.github.io/a/kbgn.jpg";
+if ( hr < 19 && hr >= 17 ) bgurl ="https://mikuji.github.io/a/kbge.jpg";
+if ( hr < 17 && hr >= 7 ) bgurl ="https://mikuji.github.io/a/kbgm.jpg";
+if ( hr < 7 && hr >= 0 ) bgurl ="https://mikuji.github.io/a/kbgn.jpg";
+
 
 if ( hr < 25 && hr >= 19 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
 if ( hr < 19 && hr >= 17 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
 if ( hr < 17 && hr >= 7 ) mkjurl4 ="https://mikuji.github.io/a/paper.PNG";
 if ( hr < 7 && hr >= 0 ) mkjurl4 ="https://mikuji.github.io/a/papern.PNG";
 
-
+changeBG(bgurl)
 changeP(mkjurl4)
 
 function changeBG(wIMG) {
